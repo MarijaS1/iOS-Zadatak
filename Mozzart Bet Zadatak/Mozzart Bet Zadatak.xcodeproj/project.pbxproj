@@ -16,6 +16,14 @@
 		1A25FA421ED8C5B600E02A6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A25FA401ED8C5B600E02A6B /* LaunchScreen.storyboard */; };
 		1A25FA4D1ED8C5B600E02A6B /* Mozzart_Bet_ZadatakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA4C1ED8C5B600E02A6B /* Mozzart_Bet_ZadatakTests.m */; };
 		1A25FA581ED8C5B600E02A6B /* Mozzart_Bet_ZadatakUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA571ED8C5B600E02A6B /* Mozzart_Bet_ZadatakUITests.m */; };
+		1ABAA5731ED8CA29007767F5 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA5721ED8CA28007767F5 /* BasicViewController.m */; };
+		1ABAA5761ED8CB56007767F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAA5751ED8CB56007767F5 /* Localizable.strings */; };
+		1ABAA5791ED8CBEA007767F5 /* LocalizableStringService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA5781ED8CBEA007767F5 /* LocalizableStringService.m */; };
+		1ABAA57B1ED8CC65007767F5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABAA57A1ED8CC65007767F5 /* MessageUI.framework */; };
+		1ABAA57D1ED8CC7D007767F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABAA57C1ED8CC7D007767F5 /* UIKit.framework */; };
+		1ABAA57F1ED8CC8C007767F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABAA57E1ED8CC8C007767F5 /* Foundation.framework */; };
+		1ABAA5831ED8CCFA007767F5 /* UIColor+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA5821ED8CCFA007767F5 /* UIColor+Colors.m */; };
+		1ABAA5861ED8CD70007767F5 /* UIFont+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA5851ED8CD70007767F5 /* UIFont+Font.m */; };
 		359085D75762B7D04B0BA537 /* libPods-Mozzart Bet ZadatakUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD7C2B37DC39F9DADCD0E20 /* libPods-Mozzart Bet ZadatakUITests.a */; };
 		F74A563C50E901F62E32B284 /* libPods-Mozzart Bet Zadatak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B6F20CC107DF0B6A681F8 /* libPods-Mozzart Bet Zadatak.a */; };
 		FBB214C1C7549A2C052CAFC1 /* libPods-Mozzart Bet ZadatakTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F47BA4ABF0FDABAE2952E0 /* libPods-Mozzart Bet ZadatakTests.a */; };
@@ -57,6 +65,19 @@
 		1A25FA531ED8C5B600E02A6B /* Mozzart Bet ZadatakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mozzart Bet ZadatakUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A25FA571ED8C5B600E02A6B /* Mozzart_Bet_ZadatakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mozzart_Bet_ZadatakUITests.m; sourceTree = "<group>"; };
 		1A25FA591ED8C5B600E02A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ABAA5711ED8CA28007767F5 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicViewController.h; path = ViewControllers/BasicViewController.h; sourceTree = "<group>"; };
+		1ABAA5721ED8CA28007767F5 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicViewController.m; path = ViewControllers/BasicViewController.m; sourceTree = "<group>"; };
+		1ABAA5751ED8CB56007767F5 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1ABAA5771ED8CBEA007767F5 /* LocalizableStringService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalizableStringService.h; path = Services/LocalizableStringService.h; sourceTree = "<group>"; };
+		1ABAA5781ED8CBEA007767F5 /* LocalizableStringService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalizableStringService.m; path = Services/LocalizableStringService.m; sourceTree = "<group>"; };
+		1ABAA57A1ED8CC65007767F5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1ABAA57C1ED8CC7D007767F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1ABAA57E1ED8CC8C007767F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1ABAA5811ED8CCFA007767F5 /* UIColor+Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Colors.h"; path = "Categories/UIColor+Colors.h"; sourceTree = "<group>"; };
+		1ABAA5821ED8CCFA007767F5 /* UIColor+Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Colors.m"; path = "Categories/UIColor+Colors.m"; sourceTree = "<group>"; };
+		1ABAA5841ED8CD70007767F5 /* UIFont+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+Font.h"; path = "Categories/UIFont+Font.h"; sourceTree = "<group>"; };
+		1ABAA5851ED8CD70007767F5 /* UIFont+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Font.m"; path = "Categories/UIFont+Font.m"; sourceTree = "<group>"; };
+		1ABAA5871ED8CDDA007767F5 /* Mozzart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mozzart-Prefix.pch"; sourceTree = "<group>"; };
 		6BEE86C615EA2110C0089677 /* Pods-Mozzart Bet ZadatakUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozzart Bet ZadatakUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mozzart Bet ZadatakUITests/Pods-Mozzart Bet ZadatakUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DD7C2B37DC39F9DADCD0E20 /* libPods-Mozzart Bet ZadatakUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mozzart Bet ZadatakUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750D31269A3EC7C4C43EB7F7 /* Pods-Mozzart Bet ZadatakUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozzart Bet ZadatakUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mozzart Bet ZadatakUITests/Pods-Mozzart Bet ZadatakUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABAA57F1ED8CC8C007767F5 /* Foundation.framework in Frameworks */,
+				1ABAA57D1ED8CC7D007767F5 /* UIKit.framework in Frameworks */,
+				1ABAA57B1ED8CC65007767F5 /* MessageUI.framework in Frameworks */,
 				F74A563C50E901F62E32B284 /* libPods-Mozzart Bet Zadatak.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,12 +145,11 @@
 		1A25FA2E1ED8C5B600E02A6B /* Mozzart Bet Zadatak */ = {
 			isa = PBXGroup;
 			children = (
+				1ABAA5801ED8CCC8007767F5 /* Categories */,
+				1ABAA5741ED8CB0F007767F5 /* Services */,
 				1A25FA321ED8C5B600E02A6B /* AppDelegate.h */,
 				1A25FA331ED8C5B600E02A6B /* AppDelegate.m */,
-				1A25FA351ED8C5B600E02A6B /* AllGamesViewController.h */,
-				1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */,
-				1A25FA381ED8C5B600E02A6B /* FavouriteGamesViewController.h */,
-				1A25FA391ED8C5B600E02A6B /* FavouriteGamesViewController.m */,
+				1ABAA5701ED8C999007767F5 /* ViewControllers */,
 				1A25FA3B1ED8C5B600E02A6B /* Main.storyboard */,
 				1A25FA3E1ED8C5B600E02A6B /* Assets.xcassets */,
 				1A25FA401ED8C5B600E02A6B /* LaunchScreen.storyboard */,
@@ -140,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				1A25FA301ED8C5B600E02A6B /* main.m */,
+				1ABAA5751ED8CB56007767F5 /* Localizable.strings */,
+				1ABAA5871ED8CDDA007767F5 /* Mozzart-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,9 +187,45 @@
 			path = "Mozzart Bet ZadatakUITests";
 			sourceTree = "<group>";
 		};
+		1ABAA5701ED8C999007767F5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A25FA351ED8C5B600E02A6B /* AllGamesViewController.h */,
+				1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */,
+				1A25FA381ED8C5B600E02A6B /* FavouriteGamesViewController.h */,
+				1A25FA391ED8C5B600E02A6B /* FavouriteGamesViewController.m */,
+				1ABAA5711ED8CA28007767F5 /* BasicViewController.h */,
+				1ABAA5721ED8CA28007767F5 /* BasicViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1ABAA5741ED8CB0F007767F5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1ABAA5771ED8CBEA007767F5 /* LocalizableStringService.h */,
+				1ABAA5781ED8CBEA007767F5 /* LocalizableStringService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		1ABAA5801ED8CCC8007767F5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1ABAA5811ED8CCFA007767F5 /* UIColor+Colors.h */,
+				1ABAA5821ED8CCFA007767F5 /* UIColor+Colors.m */,
+				1ABAA5841ED8CD70007767F5 /* UIFont+Font.h */,
+				1ABAA5851ED8CD70007767F5 /* UIFont+Font.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		834D320CAE619DBF04DED066 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1ABAA57E1ED8CC8C007767F5 /* Foundation.framework */,
+				1ABAA57C1ED8CC7D007767F5 /* UIKit.framework */,
+				1ABAA57A1ED8CC65007767F5 /* MessageUI.framework */,
 				C28B6F20CC107DF0B6A681F8 /* libPods-Mozzart Bet Zadatak.a */,
 				B0F47BA4ABF0FDABAE2952E0 /* libPods-Mozzart Bet ZadatakTests.a */,
 				6DD7C2B37DC39F9DADCD0E20 /* libPods-Mozzart Bet ZadatakUITests.a */,
@@ -301,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A25FA421ED8C5B600E02A6B /* LaunchScreen.storyboard in Resources */,
+				1ABAA5761ED8CB56007767F5 /* Localizable.strings in Resources */,
 				1A25FA3F1ED8C5B600E02A6B /* Assets.xcassets in Resources */,
 				1A25FA3D1ED8C5B600E02A6B /* Main.storyboard in Resources */,
 			);
@@ -468,7 +530,11 @@
 				1A25FA3A1ED8C5B600E02A6B /* FavouriteGamesViewController.m in Sources */,
 				1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */,
 				1A25FA371ED8C5B600E02A6B /* AllGamesViewController.m in Sources */,
+				1ABAA5791ED8CBEA007767F5 /* LocalizableStringService.m in Sources */,
+				1ABAA5731ED8CA29007767F5 /* BasicViewController.m in Sources */,
+				1ABAA5831ED8CCFA007767F5 /* UIColor+Colors.m in Sources */,
 				1A25FA311ED8C5B600E02A6B /* main.m in Sources */,
+				1ABAA5861ED8CD70007767F5 /* UIFont+Font.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +686,8 @@
 			baseConfigurationReference = 82DA122991D2BA3F4532FEC5 /* Pods-Mozzart Bet Zadatak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mozzart Bet Zadatak/Mozzart-Prefix.pch";
 				INFOPLIST_FILE = "Mozzart Bet Zadatak/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "marija.sumakovic.Mozzart-Bet-Zadatak";
@@ -632,6 +700,8 @@
 			baseConfigurationReference = 7D34D865A8CEB0F5282C7769 /* Pods-Mozzart Bet Zadatak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mozzart Bet Zadatak/Mozzart-Prefix.pch";
 				INFOPLIST_FILE = "Mozzart Bet Zadatak/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "marija.sumakovic.Mozzart-Bet-Zadatak";
@@ -708,6 +778,7 @@
 				1A25FA5E1ED8C5B600E02A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A25FA5F1ED8C5B600E02A6B /* Build configuration list for PBXNativeTarget "Mozzart Bet ZadatakTests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +787,7 @@
 				1A25FA611ED8C5B600E02A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A25FA621ED8C5B600E02A6B /* Build configuration list for PBXNativeTarget "Mozzart Bet ZadatakUITests" */ = {
 			isa = XCConfigurationList;
@@ -724,6 +796,7 @@
 				1A25FA641ED8C5B600E02A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

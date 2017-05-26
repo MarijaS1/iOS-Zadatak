@@ -27,12 +27,14 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SOCKit (1.1)
+  - Toast (3.1.0)
   - TransitionKit (2.2.1)
 
 DEPENDENCIES:
   - MBProgressHUD
   - RestKit (~> 0.26.0)
   - SDWebImage (~> 3.7)
+  - Toast (~> 3.0)
 
 SPEC CHECKSUMS:
   AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
@@ -42,8 +44,9 @@ SPEC CHECKSUMS:
   RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
 
-PODFILE CHECKSUM: 896f031129d11931cf2b10bbbadfcaf2e9b4d1b0
+PODFILE CHECKSUM: b2f8aa274deb46fc44ad185fecd633503e74cc5c
 
 COCOAPODS: 1.2.1
