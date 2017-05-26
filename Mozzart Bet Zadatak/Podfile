@@ -9,6 +9,7 @@ target 'Mozzart Bet Zadatak' do
     pod 'MBProgressHUD'
     pod 'RestKit', '~> 0.26.0'
     pod 'SDWebImage', '~>3.7'
+    pod 'Toast', '~> 3.0'
 
   target 'Mozzart Bet ZadatakTests' do
     inherit! :search_paths
