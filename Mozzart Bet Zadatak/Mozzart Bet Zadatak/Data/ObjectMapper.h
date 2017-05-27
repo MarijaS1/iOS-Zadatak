@@ -15,7 +15,17 @@
                               andWithPropertyName:(NSString *)propertyName;
 + (RKObjectMapping *)mapResponseWithObjectMappings:(NSArray *)objectMappings
                               andWithPropertyNames:(NSArray *)propertyNames;
-+ (RKObjectMapping *)mapMetaData;
+
++ (RKObjectMapping *)mapError;
++ (RKObjectMapping *)mapMatchTeam;
++ (RKObjectMapping *)mapTeamData;
++ (RKObjectMapping *)mapScore;
++ (RKObjectMapping *)mapGoals;
++ (RKObjectMapping *)mapScoreGoals;
++ (RKObjectMapping *)mapCardData;
++ (RKObjectMapping *)mapCards;
++ (RKObjectMapping *)mapLivescoreResponse;
++ (RKObjectMapping *)mapLivescores;
 
 
 @end

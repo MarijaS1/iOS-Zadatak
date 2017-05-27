@@ -10,16 +10,10 @@
 
 @implementation ServerAccessData
 
-#define SERVER_URL_KEY                          [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Server_URL_key"]
-#define SERVER_URL                              [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"Server_URLs"] objectForKey:SERVER_URL_KEY]
+#define SERVER_URL                          @"http://ws.mozzartsport.com"
 
-#define API_EXTENSION                               @"index.php/livescores.json"
-#define FLAG_BASE_URL                               @"http://static.mozzartsport.com"
+#define API_EXTENSION                       @"index.php/livescores.json"
 
-#define URL_API_CATEGORY_ID                         @"images/flags/26x17/%@"
-
-//Path pattern strings
-#define URL_API_CATEGORY_ID_PATTERN                 @"images/flags/26x17/:id"
 
 /*--------------------------------------------------------------
  * BASE URL
@@ -31,12 +25,6 @@
     return baseURL;
 }
 
--(NSString *)getFlagBaseURL {
-    NSString *basicString = [NSString stringWithFormat:@"%@", FLAG_BASE_URL];
-    
-    return basicString;
-}
-
 #pragma mark - Private methods
 
 
@@ -46,12 +34,6 @@
 
 - (NSString *)getBaseUrlWithApiExtension {
     NSString *baseUrlWithApiExtension = [NSString stringWithFormat:@"%@/%@", [self getBaseUrl], API_EXTENSION];
-    
-    return baseUrlWithApiExtension;
-}
-
-- (NSString *)getFlagBaseUrlWithApiExtension {
-    NSString *baseUrlWithApiExtension = [NSString stringWithFormat:@"%@/%@", [self getFlagBaseURL], URL_API_CATEGORY_ID];
     
     return baseUrlWithApiExtension;
 }
@@ -69,13 +51,6 @@
     return basicUrl;
 }
 
-- (NSURL *) getFlagURL {
-    NSString *basicString = [NSString stringWithFormat:@"%@", [self getFlagBaseUrlWithApiExtension]];
-    
-    NSURL *basicUrl = [NSURL URLWithString:basicString];
-    
-    return basicUrl;
-}
 
 
 /*--------------------------------------------------------------
@@ -86,9 +61,6 @@
     return [NSString stringWithFormat:@"/%@",API_EXTENSION];
 }
 
-- (NSString *)getFlagsPathPattern {
-    return [NSString stringWithFormat:@"/%@", URL_API_CATEGORY_ID_PATTERN];
-}
 
 
 

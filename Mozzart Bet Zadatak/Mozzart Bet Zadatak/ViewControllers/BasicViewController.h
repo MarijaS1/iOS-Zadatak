@@ -8,12 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import "DataController.h"
+#import "RestService.h"
+#import "MozzartError.h"
+#import "ErrorMessage.h"
 
 #define WARNING_TOAST                       0
 #define INFO_TOAST                          1
 #define ERROR_TOAST                         2
 
 @interface BasicViewController : UIViewController
+
+@property (strong, nonatomic) RestService *restService;
+
 - (void) showProgressWithInfoMessage:(NSString *)message;
 - (void) showProgressWithInfoMessage:(NSString *)message withTimeoutInterval:(float)timeout;
 - (void) showTemporaryInfoMessage:(NSString *)message;

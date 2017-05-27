@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <RestKit/RestKit.h>
 #import "MozzartError.h"
+#import "Livescores.h"
 
 
 #define REQUEST_METHOD_POST             @"POST"
@@ -17,6 +18,10 @@
 #define REQUEST_METHOD_DELETE           @"DELETE"
 
 @interface RestService : NSObject
+
+- (void) getAllMatchesWithSportID:(NSNumber *)sportID
+                      withSuccess:(void (^)(NSArray *))success
+                          failure:(void (^)(MozzartError *))failure;
 
 
 

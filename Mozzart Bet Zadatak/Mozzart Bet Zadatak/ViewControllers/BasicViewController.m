@@ -27,6 +27,13 @@
     CSToastStyle *myStyle;
 }
 
+- (RestService *)restService {
+    if (!_restService) {
+        _restService = [[RestService alloc] init];
+    }
+    return _restService;
+}
+
 static MBProgressHUD *mbProgressHud;
 
 - (void) viewDidLoad

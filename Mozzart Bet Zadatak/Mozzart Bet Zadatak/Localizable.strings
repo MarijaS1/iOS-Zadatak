@@ -38,3 +38,11 @@
 
 "alert_message_processing" = "Processing...";
 
+
+/*REST SERVICE ERROR MESSAGES*/
+
+"rest_title" = "Oops!"; //bilo error
+"rest_buttontitle" = "Okay";
+
+"rest_DEFAULT_CONNECTION_CODE" = "Sorry, we failed to make a connection!";
+"rest_DEFAULT" = "Server error!";

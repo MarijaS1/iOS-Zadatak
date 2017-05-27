@@ -11,17 +11,16 @@
 @interface ServerAccessData : NSObject
 
 - (NSString *)getBaseUrl;
-- (NSString *)getFlagBaseURL;
-- (NSString *)getApiVersion;
+
 
 //URLs
 - (NSURL *)getAllMatchesURL;
-- (NSURL *)getFlagURL;
+
 
 //path paterns
 
 - (NSString *)getAllMatchesPathPattern;
-- (NSString *)getFlagsPathPattern;
+
 
 
 @end
