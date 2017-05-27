@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AllGamesViewController : UIViewController
+@interface AllGamesViewController : BasicViewController
 
 
 @end

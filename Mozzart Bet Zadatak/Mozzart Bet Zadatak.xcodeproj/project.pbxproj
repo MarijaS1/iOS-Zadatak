@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0D0BD21ED99B0000E5A366 /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0BD11ED99B0000E5A366 /* ObjectMapper.m */; };
+		1A0D0BD91ED9A27D00E5A366 /* MetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0BD81ED9A27D00E5A366 /* MetaData.m */; };
+		1A0D0BDD1ED9A2CA00E5A366 /* RestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0BDC1ED9A2CA00E5A366 /* RestService.m */; };
+		1A0D0BE01ED9A32300E5A366 /* MozzartError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0BDF1ED9A32300E5A366 /* MozzartError.m */; };
 		1A25FA311ED8C5B600E02A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA301ED8C5B600E02A6B /* main.m */; };
 		1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA331ED8C5B600E02A6B /* AppDelegate.m */; };
 		1A25FA371ED8C5B600E02A6B /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */; };
@@ -24,6 +28,7 @@
 		1ABAA57F1ED8CC8C007767F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABAA57E1ED8CC8C007767F5 /* Foundation.framework */; };
 		1ABAA5831ED8CCFA007767F5 /* UIColor+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA5821ED8CCFA007767F5 /* UIColor+Colors.m */; };
 		1ABAA5861ED8CD70007767F5 /* UIFont+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA5851ED8CD70007767F5 /* UIFont+Font.m */; };
+		1ABAA58B1ED8D405007767F5 /* ServerAccessData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA58A1ED8D405007767F5 /* ServerAccessData.m */; };
 		359085D75762B7D04B0BA537 /* libPods-Mozzart Bet ZadatakUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD7C2B37DC39F9DADCD0E20 /* libPods-Mozzart Bet ZadatakUITests.a */; };
 		F74A563C50E901F62E32B284 /* libPods-Mozzart Bet Zadatak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B6F20CC107DF0B6A681F8 /* libPods-Mozzart Bet Zadatak.a */; };
 		FBB214C1C7549A2C052CAFC1 /* libPods-Mozzart Bet ZadatakTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F47BA4ABF0FDABAE2952E0 /* libPods-Mozzart Bet ZadatakTests.a */; };
@@ -47,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0D0BD01ED99B0000E5A366 /* ObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectMapper.h; path = Data/ObjectMapper.h; sourceTree = "<group>"; };
+		1A0D0BD11ED99B0000E5A366 /* ObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectMapper.m; path = Data/ObjectMapper.m; sourceTree = "<group>"; };
+		1A0D0BD71ED9A27D00E5A366 /* MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetaData.h; path = "Mozzart Bet Zadatak/Model/MetaData.h"; sourceTree = "<group>"; };
+		1A0D0BD81ED9A27D00E5A366 /* MetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetaData.m; path = "Mozzart Bet Zadatak/Model/MetaData.m"; sourceTree = "<group>"; };
+		1A0D0BDB1ED9A2CA00E5A366 /* RestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestService.h; path = Services/RestService.h; sourceTree = "<group>"; };
+		1A0D0BDC1ED9A2CA00E5A366 /* RestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestService.m; path = Services/RestService.m; sourceTree = "<group>"; };
+		1A0D0BDE1ED9A32300E5A366 /* MozzartError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MozzartError.h; path = "Mozzart Bet Zadatak/Model/MozzartError.h"; sourceTree = "<group>"; };
+		1A0D0BDF1ED9A32300E5A366 /* MozzartError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MozzartError.m; path = "Mozzart Bet Zadatak/Model/MozzartError.m"; sourceTree = "<group>"; };
 		1A25FA2C1ED8C5B600E02A6B /* Mozzart Bet Zadatak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mozzart Bet Zadatak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A25FA301ED8C5B600E02A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A25FA321ED8C5B600E02A6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +91,8 @@
 		1ABAA5841ED8CD70007767F5 /* UIFont+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+Font.h"; path = "Categories/UIFont+Font.h"; sourceTree = "<group>"; };
 		1ABAA5851ED8CD70007767F5 /* UIFont+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Font.m"; path = "Categories/UIFont+Font.m"; sourceTree = "<group>"; };
 		1ABAA5871ED8CDDA007767F5 /* Mozzart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mozzart-Prefix.pch"; sourceTree = "<group>"; };
+		1ABAA5891ED8D405007767F5 /* ServerAccessData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerAccessData.h; path = Data/ServerAccessData.h; sourceTree = "<group>"; };
+		1ABAA58A1ED8D405007767F5 /* ServerAccessData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerAccessData.m; path = Data/ServerAccessData.m; sourceTree = "<group>"; };
 		6BEE86C615EA2110C0089677 /* Pods-Mozzart Bet ZadatakUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozzart Bet ZadatakUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mozzart Bet ZadatakUITests/Pods-Mozzart Bet ZadatakUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DD7C2B37DC39F9DADCD0E20 /* libPods-Mozzart Bet ZadatakUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mozzart Bet ZadatakUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750D31269A3EC7C4C43EB7F7 /* Pods-Mozzart Bet ZadatakUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozzart Bet ZadatakUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mozzart Bet ZadatakUITests/Pods-Mozzart Bet ZadatakUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +135,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0D0BD31ED9A0FC00E5A366 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A0D0BD71ED9A27D00E5A366 /* MetaData.h */,
+				1A0D0BD81ED9A27D00E5A366 /* MetaData.m */,
+				1A0D0BDE1ED9A32300E5A366 /* MozzartError.h */,
+				1A0D0BDF1ED9A32300E5A366 /* MozzartError.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		1A25FA231ED8C5B600E02A6B = {
 			isa = PBXGroup;
 			children = (
@@ -145,11 +172,13 @@
 		1A25FA2E1ED8C5B600E02A6B /* Mozzart Bet Zadatak */ = {
 			isa = PBXGroup;
 			children = (
+				1A0D0BD31ED9A0FC00E5A366 /* Model */,
 				1ABAA5801ED8CCC8007767F5 /* Categories */,
+				1ABAA5881ED8D3C2007767F5 /* Data */,
 				1ABAA5741ED8CB0F007767F5 /* Services */,
+				1ABAA5701ED8C999007767F5 /* ViewControllers */,
 				1A25FA321ED8C5B600E02A6B /* AppDelegate.h */,
 				1A25FA331ED8C5B600E02A6B /* AppDelegate.m */,
-				1ABAA5701ED8C999007767F5 /* ViewControllers */,
 				1A25FA3B1ED8C5B600E02A6B /* Main.storyboard */,
 				1A25FA3E1ED8C5B600E02A6B /* Assets.xcassets */,
 				1A25FA401ED8C5B600E02A6B /* LaunchScreen.storyboard */,
@@ -205,6 +234,8 @@
 			children = (
 				1ABAA5771ED8CBEA007767F5 /* LocalizableStringService.h */,
 				1ABAA5781ED8CBEA007767F5 /* LocalizableStringService.m */,
+				1A0D0BDB1ED9A2CA00E5A366 /* RestService.h */,
+				1A0D0BDC1ED9A2CA00E5A366 /* RestService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -218,6 +249,17 @@
 				1ABAA5851ED8CD70007767F5 /* UIFont+Font.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		1ABAA5881ED8D3C2007767F5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1ABAA5891ED8D405007767F5 /* ServerAccessData.h */,
+				1ABAA58A1ED8D405007767F5 /* ServerAccessData.m */,
+				1A0D0BD01ED99B0000E5A366 /* ObjectMapper.h */,
+				1A0D0BD11ED99B0000E5A366 /* ObjectMapper.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		834D320CAE619DBF04DED066 /* Frameworks */ = {
@@ -527,14 +569,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABAA58B1ED8D405007767F5 /* ServerAccessData.m in Sources */,
 				1A25FA3A1ED8C5B600E02A6B /* FavouriteGamesViewController.m in Sources */,
 				1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */,
+				1A0D0BD21ED99B0000E5A366 /* ObjectMapper.m in Sources */,
+				1A0D0BD91ED9A27D00E5A366 /* MetaData.m in Sources */,
 				1A25FA371ED8C5B600E02A6B /* AllGamesViewController.m in Sources */,
 				1ABAA5791ED8CBEA007767F5 /* LocalizableStringService.m in Sources */,
 				1ABAA5731ED8CA29007767F5 /* BasicViewController.m in Sources */,
+				1A0D0BE01ED9A32300E5A366 /* MozzartError.m in Sources */,
 				1ABAA5831ED8CCFA007767F5 /* UIColor+Colors.m in Sources */,
 				1A25FA311ED8C5B600E02A6B /* main.m in Sources */,
 				1ABAA5861ED8CD70007767F5 /* UIFont+Font.m in Sources */,
+				1A0D0BDD1ED9A2CA00E5A366 /* RestService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

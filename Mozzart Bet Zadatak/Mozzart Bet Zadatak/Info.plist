@@ -51,5 +51,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Server_URL_key</key>
+	<string>Mozzart_server</string>
+	<key>Server_URLs</key>
+	<dict/>
+	<key>Mozzart_server</key>
+	<string> http://ws.mozzartsport.com</string>
 </dict>
 </plist>
