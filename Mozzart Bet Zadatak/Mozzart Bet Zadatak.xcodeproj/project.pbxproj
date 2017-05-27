@@ -24,6 +24,11 @@
 		1A0D0C0F1ED9C90800E5A366 /* NSString+PathParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C0E1ED9C90800E5A366 /* NSString+PathParameters.m */; };
 		1A0D0C131ED9CCB700E5A366 /* ErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C121ED9CCB700E5A366 /* ErrorMessage.m */; };
 		1A0D0C161ED9D9C600E5A366 /* Livescores.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C151ED9D9C600E5A366 /* Livescores.m */; };
+		1A0D0C1F1EDA152000E5A366 /* V8HorizontalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C1D1EDA152000E5A366 /* V8HorizontalPickerView.m */; };
+		1A0D0C251EDA174B00E5A366 /* GenericDataPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C221EDA174B00E5A366 /* GenericDataPicker.m */; };
+		1A0D0C261EDA174B00E5A366 /* GenericPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C241EDA174B00E5A366 /* GenericPicker.m */; };
+		1A0D0C2A1EDA261300E5A366 /* HeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C291EDA261300E5A366 /* HeaderTableView.m */; };
+		1A0D0C2C1EDA263000E5A366 /* HeaderTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D0C2B1EDA263000E5A366 /* HeaderTableView.xib */; };
 		1A25FA311ED8C5B600E02A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA301ED8C5B600E02A6B /* main.m */; };
 		1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA331ED8C5B600E02A6B /* AppDelegate.m */; };
 		1A25FA371ED8C5B600E02A6B /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */; };
@@ -99,6 +104,16 @@
 		1A0D0C121ED9CCB700E5A366 /* ErrorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ErrorMessage.m; path = Utils/ErrorMessage.m; sourceTree = "<group>"; };
 		1A0D0C141ED9D9C600E5A366 /* Livescores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Livescores.h; path = "Mozzart Bet Zadatak/Model/Livescores.h"; sourceTree = "<group>"; };
 		1A0D0C151ED9D9C600E5A366 /* Livescores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Livescores.m; path = "Mozzart Bet Zadatak/Model/Livescores.m"; sourceTree = "<group>"; };
+		1A0D0C1C1EDA152000E5A366 /* V8HorizontalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V8HorizontalPickerView.h; path = Libs/V8HorizontalPicker/V8HorizontalPickerView.h; sourceTree = "<group>"; };
+		1A0D0C1D1EDA152000E5A366 /* V8HorizontalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V8HorizontalPickerView.m; path = Libs/V8HorizontalPicker/V8HorizontalPickerView.m; sourceTree = "<group>"; };
+		1A0D0C1E1EDA152000E5A366 /* V8HorizontalPickerViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V8HorizontalPickerViewProtocol.h; path = Libs/V8HorizontalPicker/V8HorizontalPickerViewProtocol.h; sourceTree = "<group>"; };
+		1A0D0C211EDA174B00E5A366 /* GenericDataPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericDataPicker.h; sourceTree = "<group>"; };
+		1A0D0C221EDA174B00E5A366 /* GenericDataPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericDataPicker.m; sourceTree = "<group>"; };
+		1A0D0C231EDA174B00E5A366 /* GenericPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericPicker.h; sourceTree = "<group>"; };
+		1A0D0C241EDA174B00E5A366 /* GenericPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericPicker.m; sourceTree = "<group>"; };
+		1A0D0C281EDA261300E5A366 /* HeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderTableView.h; path = "Custom Views/HeaderTableView.h"; sourceTree = "<group>"; };
+		1A0D0C291EDA261300E5A366 /* HeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderTableView.m; path = "Custom Views/HeaderTableView.m"; sourceTree = "<group>"; };
+		1A0D0C2B1EDA263000E5A366 /* HeaderTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderTableView.xib; path = "Custom Views/HeaderTableView.xib"; sourceTree = "<group>"; };
 		1A25FA2C1ED8C5B600E02A6B /* Mozzart Bet Zadatak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mozzart Bet Zadatak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A25FA301ED8C5B600E02A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A25FA321ED8C5B600E02A6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -207,6 +222,8 @@
 		1A0D0C081ED9C80100E5A366 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				1A0D0C201EDA174B00E5A366 /* GenericPicker */,
+				1A0D0C171EDA14B000E5A366 /* V8HorizontalPicker */,
 				1A0D0C091ED9C80900E5A366 /* NSURL+Parameters */,
 			);
 			name = Libs;
@@ -228,6 +245,38 @@
 				1A0D0C121ED9CCB700E5A366 /* ErrorMessage.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		1A0D0C171EDA14B000E5A366 /* V8HorizontalPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1A0D0C1C1EDA152000E5A366 /* V8HorizontalPickerView.h */,
+				1A0D0C1D1EDA152000E5A366 /* V8HorizontalPickerView.m */,
+				1A0D0C1E1EDA152000E5A366 /* V8HorizontalPickerViewProtocol.h */,
+			);
+			name = V8HorizontalPicker;
+			sourceTree = "<group>";
+		};
+		1A0D0C201EDA174B00E5A366 /* GenericPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1A0D0C211EDA174B00E5A366 /* GenericDataPicker.h */,
+				1A0D0C221EDA174B00E5A366 /* GenericDataPicker.m */,
+				1A0D0C231EDA174B00E5A366 /* GenericPicker.h */,
+				1A0D0C241EDA174B00E5A366 /* GenericPicker.m */,
+			);
+			name = GenericPicker;
+			path = Libs/GenericPicker;
+			sourceTree = "<group>";
+		};
+		1A0D0C271EDA25DA00E5A366 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0D0C281EDA261300E5A366 /* HeaderTableView.h */,
+				1A0D0C291EDA261300E5A366 /* HeaderTableView.m */,
+				1A0D0C2B1EDA263000E5A366 /* HeaderTableView.xib */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 		1A25FA231ED8C5B600E02A6B = {
@@ -255,6 +304,7 @@
 		1A25FA2E1ED8C5B600E02A6B /* Mozzart Bet Zadatak */ = {
 			isa = PBXGroup;
 			children = (
+				1A0D0C271EDA25DA00E5A366 /* Custom Views */,
 				1A0D0C101ED9CC9900E5A366 /* Utils */,
 				1A0D0C081ED9C80100E5A366 /* Libs */,
 				1A0D0BD31ED9A0FC00E5A366 /* Model */,
@@ -495,6 +545,7 @@
 				1A25FA421ED8C5B600E02A6B /* LaunchScreen.storyboard in Resources */,
 				1ABAA5761ED8CB56007767F5 /* Localizable.strings in Resources */,
 				1A25FA3F1ED8C5B600E02A6B /* Assets.xcassets in Resources */,
+				1A0D0C2C1EDA263000E5A366 /* HeaderTableView.xib in Resources */,
 				1A25FA3D1ED8C5B600E02A6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,8 +712,10 @@
 				1A0D0C0F1ED9C90800E5A366 /* NSString+PathParameters.m in Sources */,
 				1ABAA58B1ED8D405007767F5 /* ServerAccessData.m in Sources */,
 				1A0D0C131ED9CCB700E5A366 /* ErrorMessage.m in Sources */,
+				1A0D0C251EDA174B00E5A366 /* GenericDataPicker.m in Sources */,
 				1A25FA3A1ED8C5B600E02A6B /* FavouriteGamesViewController.m in Sources */,
 				1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */,
+				1A0D0C261EDA174B00E5A366 /* GenericPicker.m in Sources */,
 				1A0D0BFB1ED9B8F900E5A366 /* ScoreGoals.m in Sources */,
 				1A0D0BF81ED9B81500E5A366 /* CardData.m in Sources */,
 				1A0D0C041ED9C1BD00E5A366 /* TeamData.m in Sources */,
@@ -674,6 +727,7 @@
 				1ABAA5791ED8CBEA007767F5 /* LocalizableStringService.m in Sources */,
 				1A0D0BE31ED9A4ED00E5A366 /* MatchTeam.m in Sources */,
 				1ABAA5731ED8CA29007767F5 /* BasicViewController.m in Sources */,
+				1A0D0C2A1EDA261300E5A366 /* HeaderTableView.m in Sources */,
 				1A0D0BE01ED9A32300E5A366 /* MozzartError.m in Sources */,
 				1A0D0BF51ED9B5B600E5A366 /* Goals.m in Sources */,
 				1ABAA5831ED8CCFA007767F5 /* UIColor+Colors.m in Sources */,
@@ -684,6 +738,7 @@
 				1A0D0BEF1ED9A6A400E5A366 /* Score.m in Sources */,
 				1A0D0C011ED9BBFC00E5A366 /* LivescoreResponse.m in Sources */,
 				1A0D0BDD1ED9A2CA00E5A366 /* RestService.m in Sources */,
+				1A0D0C1F1EDA152000E5A366 /* V8HorizontalPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

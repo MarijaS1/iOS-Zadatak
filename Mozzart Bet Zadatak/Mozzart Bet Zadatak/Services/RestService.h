@@ -10,6 +10,7 @@
 #import <RestKit/RestKit.h>
 #import "MozzartError.h"
 #import "Livescores.h"
+#import "LivescoreResponse.h"
 
 
 #define REQUEST_METHOD_POST             @"POST"
@@ -20,7 +21,7 @@
 @interface RestService : NSObject
 
 - (void) getAllMatchesWithSportID:(NSNumber *)sportID
-                      withSuccess:(void (^)(NSArray *))success
+                      withSuccess:(void (^)(LivescoreResponse *))success
                           failure:(void (^)(MozzartError *))failure;
 
 

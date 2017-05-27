@@ -21,7 +21,7 @@
 @implementation RestService
 
 - (void) getAllMatchesWithSportID:(NSNumber *)sportID
-                      withSuccess:(void (^)(NSArray *))success
+                      withSuccess:(void (^)(LivescoreResponse *))success
                           failure:(void (^)(MozzartError *))failure {
     
     NSURL *url = [[DataController sharedInstance].serverData getAllMatchesURL];
