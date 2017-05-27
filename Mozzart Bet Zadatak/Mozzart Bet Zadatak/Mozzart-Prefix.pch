@@ -1,0 +1,22 @@
+//
+//  Mozzart-Prefix.pch
+//  Mozzart Bet Zadatak
+//
+//  Created by Marija Sumakovic on 5/26/17.
+//  Copyright © 2017 Marija Sumakovic. All rights reserved.
+//
+
+#ifndef Mozzart_Prefix_pch
+#define Mozzart_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIColor+Colors.h"
+#import "UIFont+Font.h"
+#import "BasicViewController.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Mozzart_Prefix_pch */

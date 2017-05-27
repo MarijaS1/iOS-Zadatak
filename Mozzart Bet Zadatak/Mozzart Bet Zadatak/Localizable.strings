@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  Mozzart Bet Zadatak
+
+  Created by Marija Sumakovic on 5/26/17.
+  Copyright © 2017 Marija Sumakovic. All rights reserved.
+*/
+
+/*TYPES*/
+/*
+ *alert
+ *button
+ *label
+ *textfield
+ *rest
+ *
+ */
+
+/*SUBTYPES*/
+/*
+ *title
+ *message
+ *buttontitle
+ *text
+ *
+ */
+
+
+/*TEST MESSAGE*/
+"messagetest" = "Test message";
+
+/*GENERIC STRINGS*/
+
+
+"alert_message_servicetimeout" = "Service timeout";
+
+"alert_message_pleasewait" = "Please wait...";
+
+"alert_message_processing" = "Processing...";
+
+
+/*REST SERVICE ERROR MESSAGES*/
+
+"rest_title" = "Oops!"; //bilo error
+"rest_buttontitle" = "Okay";
+
+"rest_DEFAULT_CONNECTION_CODE" = "Sorry, we failed to make a connection!";
+"rest_DEFAULT" = "Server error!";
