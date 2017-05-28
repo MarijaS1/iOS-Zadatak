@@ -37,16 +37,16 @@
 		1A0D0C351EDA38BB00E5A366 /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D0C331EDA38BB00E5A366 /* MatchTableViewCell.xib */; };
 		1A0D0C391EDA59F500E5A366 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C381EDA59F500E5A366 /* KLCPopup.m */; };
 		1A0D0C3C1EDA5A3400E5A366 /* StatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C3B1EDA5A3400E5A366 /* StatisticsView.m */; };
-		1A0D0C3E1EDA5A4500E5A366 /* StatisticsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D0C3D1EDA5A4500E5A366 /* StatisticsView.xib */; };
 		1A25FA311ED8C5B600E02A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA301ED8C5B600E02A6B /* main.m */; };
 		1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA331ED8C5B600E02A6B /* AppDelegate.m */; };
-		1A25FA371ED8C5B600E02A6B /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */; };
-		1A25FA3A1ED8C5B600E02A6B /* FavouriteGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA391ED8C5B600E02A6B /* FavouriteGamesViewController.m */; };
 		1A25FA3D1ED8C5B600E02A6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A25FA3B1ED8C5B600E02A6B /* Main.storyboard */; };
 		1A25FA3F1ED8C5B600E02A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A25FA3E1ED8C5B600E02A6B /* Assets.xcassets */; };
 		1A25FA421ED8C5B600E02A6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A25FA401ED8C5B600E02A6B /* LaunchScreen.storyboard */; };
 		1A25FA4D1ED8C5B600E02A6B /* Mozzart_Bet_ZadatakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA4C1ED8C5B600E02A6B /* Mozzart_Bet_ZadatakTests.m */; };
 		1A25FA581ED8C5B600E02A6B /* Mozzart_Bet_ZadatakUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA571ED8C5B600E02A6B /* Mozzart_Bet_ZadatakUITests.m */; };
+		1A32D2341EDB97AE002EEA33 /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A32D2311EDB97AE002EEA33 /* AllGamesViewController.m */; };
+		1A32D2351EDB97AE002EEA33 /* FavouriteGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A32D2331EDB97AE002EEA33 /* FavouriteGamesViewController.m */; };
+		1A32D2371EDB97F6002EEA33 /* StatisticsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A32D2361EDB97F6002EEA33 /* StatisticsView.xib */; };
 		1ABAA5731ED8CA29007767F5 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA5721ED8CA28007767F5 /* BasicViewController.m */; };
 		1ABAA5761ED8CB56007767F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABAA5751ED8CB56007767F5 /* Localizable.strings */; };
 		1ABAA5791ED8CBEA007767F5 /* LocalizableStringService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAA5781ED8CBEA007767F5 /* LocalizableStringService.m */; };
@@ -138,15 +138,10 @@
 		1A0D0C381EDA59F500E5A366 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KLCPopup.m; path = Libs/KLCPopup/KLCPopup.m; sourceTree = "<group>"; };
 		1A0D0C3A1EDA5A3400E5A366 /* StatisticsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatisticsView.h; path = "Custom Views/StatisticsView.h"; sourceTree = "<group>"; };
 		1A0D0C3B1EDA5A3400E5A366 /* StatisticsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsView.m; path = "Custom Views/StatisticsView.m"; sourceTree = "<group>"; };
-		1A0D0C3D1EDA5A4500E5A366 /* StatisticsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsView.xib; sourceTree = "<group>"; };
 		1A25FA2C1ED8C5B600E02A6B /* Mozzart Bet Zadatak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mozzart Bet Zadatak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A25FA301ED8C5B600E02A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A25FA321ED8C5B600E02A6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A25FA331ED8C5B600E02A6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1A25FA351ED8C5B600E02A6B /* AllGamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllGamesViewController.h; sourceTree = "<group>"; };
-		1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllGamesViewController.m; sourceTree = "<group>"; };
-		1A25FA381ED8C5B600E02A6B /* FavouriteGamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavouriteGamesViewController.h; sourceTree = "<group>"; };
-		1A25FA391ED8C5B600E02A6B /* FavouriteGamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavouriteGamesViewController.m; sourceTree = "<group>"; };
 		1A25FA3C1ED8C5B600E02A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A25FA3E1ED8C5B600E02A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A25FA411ED8C5B600E02A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -157,6 +152,11 @@
 		1A25FA531ED8C5B600E02A6B /* Mozzart Bet ZadatakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mozzart Bet ZadatakUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A25FA571ED8C5B600E02A6B /* Mozzart_Bet_ZadatakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mozzart_Bet_ZadatakUITests.m; sourceTree = "<group>"; };
 		1A25FA591ED8C5B600E02A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A32D2301EDB97AE002EEA33 /* AllGamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllGamesViewController.h; path = ViewControllers/AllGamesViewController.h; sourceTree = "<group>"; };
+		1A32D2311EDB97AE002EEA33 /* AllGamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllGamesViewController.m; path = ViewControllers/AllGamesViewController.m; sourceTree = "<group>"; };
+		1A32D2321EDB97AE002EEA33 /* FavouriteGamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouriteGamesViewController.h; path = ViewControllers/FavouriteGamesViewController.h; sourceTree = "<group>"; };
+		1A32D2331EDB97AE002EEA33 /* FavouriteGamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouriteGamesViewController.m; path = ViewControllers/FavouriteGamesViewController.m; sourceTree = "<group>"; };
+		1A32D2361EDB97F6002EEA33 /* StatisticsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StatisticsView.xib; path = "Custom Views/StatisticsView.xib"; sourceTree = "<group>"; };
 		1ABAA5711ED8CA28007767F5 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicViewController.h; path = ViewControllers/BasicViewController.h; sourceTree = "<group>"; };
 		1ABAA5721ED8CA28007767F5 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicViewController.m; path = ViewControllers/BasicViewController.m; sourceTree = "<group>"; };
 		1ABAA5751ED8CB56007767F5 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -303,7 +303,7 @@
 				1A0D0C2B1EDA263000E5A366 /* HeaderTableView.xib */,
 				1A0D0C3A1EDA5A3400E5A366 /* StatisticsView.h */,
 				1A0D0C3B1EDA5A3400E5A366 /* StatisticsView.m */,
-				1A0D0C3D1EDA5A4500E5A366 /* StatisticsView.xib */,
+				1A32D2361EDB97F6002EEA33 /* StatisticsView.xib */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -407,14 +407,14 @@
 				1ABAA5721ED8CA28007767F5 /* BasicViewController.m */,
 				1A0D0C2D1EDA34E500E5A366 /* BasicTableViewController.h */,
 				1A0D0C2E1EDA34E500E5A366 /* BasicTableViewController.m */,
-				1A25FA351ED8C5B600E02A6B /* AllGamesViewController.h */,
-				1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */,
-				1A25FA381ED8C5B600E02A6B /* FavouriteGamesViewController.h */,
-				1A25FA391ED8C5B600E02A6B /* FavouriteGamesViewController.m */,
-				1A0B03351EDB1F4200CFE84F /* LiveMatchesTableViewController.h */,
-				1A0B03361EDB1F4200CFE84F /* LiveMatchesTableViewController.m */,
+				1A32D2301EDB97AE002EEA33 /* AllGamesViewController.h */,
+				1A32D2311EDB97AE002EEA33 /* AllGamesViewController.m */,
+				1A32D2321EDB97AE002EEA33 /* FavouriteGamesViewController.h */,
+				1A32D2331EDB97AE002EEA33 /* FavouriteGamesViewController.m */,
 				1A0B03381EDB1F6300CFE84F /* FinishedMatchesViewController.h */,
 				1A0B03391EDB1F6300CFE84F /* FinishedMatchesViewController.m */,
+				1A0B03351EDB1F4200CFE84F /* LiveMatchesTableViewController.h */,
+				1A0B03361EDB1F4200CFE84F /* LiveMatchesTableViewController.m */,
 				1A0B033B1EDB32B100CFE84F /* NextGamesTableViewController.h */,
 				1A0B033C1EDB32B100CFE84F /* NextGamesTableViewController.m */,
 			);
@@ -600,7 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A25FA421ED8C5B600E02A6B /* LaunchScreen.storyboard in Resources */,
-				1A0D0C3E1EDA5A4500E5A366 /* StatisticsView.xib in Resources */,
+				1A32D2371EDB97F6002EEA33 /* StatisticsView.xib in Resources */,
 				1ABAA5761ED8CB56007767F5 /* Localizable.strings in Resources */,
 				1A25FA3F1ED8C5B600E02A6B /* Assets.xcassets in Resources */,
 				1A0D0C2C1EDA263000E5A366 /* HeaderTableView.xib in Resources */,
@@ -768,11 +768,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A32D2341EDB97AE002EEA33 /* AllGamesViewController.m in Sources */,
 				1A0D0C0F1ED9C90800E5A366 /* NSString+PathParameters.m in Sources */,
 				1ABAA58B1ED8D405007767F5 /* ServerAccessData.m in Sources */,
+				1A32D2351EDB97AE002EEA33 /* FavouriteGamesViewController.m in Sources */,
 				1A0D0C131ED9CCB700E5A366 /* ErrorMessage.m in Sources */,
 				1A0D0C251EDA174B00E5A366 /* GenericDataPicker.m in Sources */,
-				1A25FA3A1ED8C5B600E02A6B /* FavouriteGamesViewController.m in Sources */,
 				1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */,
 				1A0D0C261EDA174B00E5A366 /* GenericPicker.m in Sources */,
 				1A0D0BFB1ED9B8F900E5A366 /* ScoreGoals.m in Sources */,
@@ -783,7 +784,6 @@
 				1A0D0BD91ED9A27D00E5A366 /* MetaData.m in Sources */,
 				1A0D0C161ED9D9C600E5A366 /* Livescores.m in Sources */,
 				1A0D0BFE1ED9B9B100E5A366 /* Cards.m in Sources */,
-				1A25FA371ED8C5B600E02A6B /* AllGamesViewController.m in Sources */,
 				1ABAA5791ED8CBEA007767F5 /* LocalizableStringService.m in Sources */,
 				1A0D0BE31ED9A4ED00E5A366 /* MatchTeam.m in Sources */,
 				1ABAA5731ED8CA29007767F5 /* BasicViewController.m in Sources */,
