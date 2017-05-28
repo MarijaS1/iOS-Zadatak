@@ -29,6 +29,10 @@
 		1A0D0C261EDA174B00E5A366 /* GenericPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C241EDA174B00E5A366 /* GenericPicker.m */; };
 		1A0D0C2A1EDA261300E5A366 /* HeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C291EDA261300E5A366 /* HeaderTableView.m */; };
 		1A0D0C2C1EDA263000E5A366 /* HeaderTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D0C2B1EDA263000E5A366 /* HeaderTableView.xib */; };
+		1A0D0C2F1EDA34E500E5A366 /* BasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C2E1EDA34E500E5A366 /* BasicTableViewController.m */; };
+		1A0D0C341EDA38BB00E5A366 /* MatchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C321EDA38BB00E5A366 /* MatchTableViewCell.m */; };
+		1A0D0C351EDA38BB00E5A366 /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D0C331EDA38BB00E5A366 /* MatchTableViewCell.xib */; };
+		1A0D0C391EDA59F500E5A366 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C381EDA59F500E5A366 /* KLCPopup.m */; };
 		1A25FA311ED8C5B600E02A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA301ED8C5B600E02A6B /* main.m */; };
 		1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA331ED8C5B600E02A6B /* AppDelegate.m */; };
 		1A25FA371ED8C5B600E02A6B /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */; };
@@ -114,6 +118,13 @@
 		1A0D0C281EDA261300E5A366 /* HeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderTableView.h; path = "Custom Views/HeaderTableView.h"; sourceTree = "<group>"; };
 		1A0D0C291EDA261300E5A366 /* HeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderTableView.m; path = "Custom Views/HeaderTableView.m"; sourceTree = "<group>"; };
 		1A0D0C2B1EDA263000E5A366 /* HeaderTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderTableView.xib; path = "Custom Views/HeaderTableView.xib"; sourceTree = "<group>"; };
+		1A0D0C2D1EDA34E500E5A366 /* BasicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicTableViewController.h; path = ViewControllers/BasicTableViewController.h; sourceTree = "<group>"; };
+		1A0D0C2E1EDA34E500E5A366 /* BasicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicTableViewController.m; path = ViewControllers/BasicTableViewController.m; sourceTree = "<group>"; };
+		1A0D0C311EDA38BB00E5A366 /* MatchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchTableViewCell.h; path = "Custom Cells/MatchTableViewCell.h"; sourceTree = "<group>"; };
+		1A0D0C321EDA38BB00E5A366 /* MatchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MatchTableViewCell.m; path = "Custom Cells/MatchTableViewCell.m"; sourceTree = "<group>"; };
+		1A0D0C331EDA38BB00E5A366 /* MatchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MatchTableViewCell.xib; path = "Custom Cells/MatchTableViewCell.xib"; sourceTree = "<group>"; };
+		1A0D0C371EDA59F500E5A366 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KLCPopup.h; path = Libs/KLCPopup/KLCPopup.h; sourceTree = "<group>"; };
+		1A0D0C381EDA59F500E5A366 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KLCPopup.m; path = Libs/KLCPopup/KLCPopup.m; sourceTree = "<group>"; };
 		1A25FA2C1ED8C5B600E02A6B /* Mozzart Bet Zadatak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mozzart Bet Zadatak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A25FA301ED8C5B600E02A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A25FA321ED8C5B600E02A6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -222,6 +233,7 @@
 		1A0D0C081ED9C80100E5A366 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				1A0D0C361EDA59DB00E5A366 /* KLCPopup */,
 				1A0D0C201EDA174B00E5A366 /* GenericPicker */,
 				1A0D0C171EDA14B000E5A366 /* V8HorizontalPicker */,
 				1A0D0C091ED9C80900E5A366 /* NSURL+Parameters */,
@@ -279,6 +291,25 @@
 			name = "Custom Views";
 			sourceTree = "<group>";
 		};
+		1A0D0C301EDA388C00E5A366 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1A0D0C311EDA38BB00E5A366 /* MatchTableViewCell.h */,
+				1A0D0C321EDA38BB00E5A366 /* MatchTableViewCell.m */,
+				1A0D0C331EDA38BB00E5A366 /* MatchTableViewCell.xib */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		1A0D0C361EDA59DB00E5A366 /* KLCPopup */ = {
+			isa = PBXGroup;
+			children = (
+				1A0D0C371EDA59F500E5A366 /* KLCPopup.h */,
+				1A0D0C381EDA59F500E5A366 /* KLCPopup.m */,
+			);
+			name = KLCPopup;
+			sourceTree = "<group>";
+		};
 		1A25FA231ED8C5B600E02A6B = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +335,7 @@
 		1A25FA2E1ED8C5B600E02A6B /* Mozzart Bet Zadatak */ = {
 			isa = PBXGroup;
 			children = (
+				1A0D0C301EDA388C00E5A366 /* Custom Cells */,
 				1A0D0C271EDA25DA00E5A366 /* Custom Views */,
 				1A0D0C101ED9CC9900E5A366 /* Utils */,
 				1A0D0C081ED9C80100E5A366 /* Libs */,
@@ -354,12 +386,14 @@
 		1ABAA5701ED8C999007767F5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1ABAA5711ED8CA28007767F5 /* BasicViewController.h */,
+				1ABAA5721ED8CA28007767F5 /* BasicViewController.m */,
+				1A0D0C2D1EDA34E500E5A366 /* BasicTableViewController.h */,
+				1A0D0C2E1EDA34E500E5A366 /* BasicTableViewController.m */,
 				1A25FA351ED8C5B600E02A6B /* AllGamesViewController.h */,
 				1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */,
 				1A25FA381ED8C5B600E02A6B /* FavouriteGamesViewController.h */,
 				1A25FA391ED8C5B600E02A6B /* FavouriteGamesViewController.m */,
-				1ABAA5711ED8CA28007767F5 /* BasicViewController.h */,
-				1ABAA5721ED8CA28007767F5 /* BasicViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -547,6 +581,7 @@
 				1A25FA3F1ED8C5B600E02A6B /* Assets.xcassets in Resources */,
 				1A0D0C2C1EDA263000E5A366 /* HeaderTableView.xib in Resources */,
 				1A25FA3D1ED8C5B600E02A6B /* Main.storyboard in Resources */,
+				1A0D0C351EDA38BB00E5A366 /* MatchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +755,7 @@
 				1A0D0BF81ED9B81500E5A366 /* CardData.m in Sources */,
 				1A0D0C041ED9C1BD00E5A366 /* TeamData.m in Sources */,
 				1A0D0BD21ED99B0000E5A366 /* ObjectMapper.m in Sources */,
+				1A0D0C2F1EDA34E500E5A366 /* BasicTableViewController.m in Sources */,
 				1A0D0BD91ED9A27D00E5A366 /* MetaData.m in Sources */,
 				1A0D0C161ED9D9C600E5A366 /* Livescores.m in Sources */,
 				1A0D0BFE1ED9B9B100E5A366 /* Cards.m in Sources */,
@@ -738,7 +774,9 @@
 				1A0D0BEF1ED9A6A400E5A366 /* Score.m in Sources */,
 				1A0D0C011ED9BBFC00E5A366 /* LivescoreResponse.m in Sources */,
 				1A0D0BDD1ED9A2CA00E5A366 /* RestService.m in Sources */,
+				1A0D0C391EDA59F500E5A366 /* KLCPopup.m in Sources */,
 				1A0D0C1F1EDA152000E5A366 /* V8HorizontalPickerView.m in Sources */,
+				1A0D0C341EDA38BB00E5A366 /* MatchTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

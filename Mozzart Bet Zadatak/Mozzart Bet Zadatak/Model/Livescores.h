@@ -25,7 +25,7 @@
 @property (strong, nonatomic) NSNumber *winner;
 @property (nonatomic) long started;
 @property (nonatomic) long period_started;
-@property (strong, nonatomic) NSNumber *match_time;
+@property (strong, nonatomic) NSString *match_time;
 @property (strong, nonatomic) NSString *status;
 @property (strong, nonatomic) NSNumber *status_code;
 @property (strong, nonatomic) Score *score;

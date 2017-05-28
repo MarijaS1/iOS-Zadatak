@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AllGamesViewController : BasicViewController <UITableViewDelegate, UITableViewDataSource>
-
-
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface AllGamesViewController : BasicTableViewController <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UIView *headerView;
 
 @end
 

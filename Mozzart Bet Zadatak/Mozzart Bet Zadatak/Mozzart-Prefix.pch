@@ -14,6 +14,7 @@
 #import "UIColor+Colors.h"
 #import "UIFont+Font.h"
 #import "BasicViewController.h"
+#import "BasicTableViewController.h"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.
