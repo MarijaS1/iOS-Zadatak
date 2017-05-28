@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GenericPicker.h"
 
-@interface AllGamesViewController : BasicTableViewController <UITableViewDelegate, UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UIView *headerView;
+@interface AllGamesViewController : BasicTableViewController <UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *filterByDateBarButtonItem;
+@property (weak, nonatomic) IBOutlet UIPickerView *filterByDatePickerView;
+
+@property (weak, nonatomic) IBOutlet UIView *pickerView;
+
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
 
 @end
 

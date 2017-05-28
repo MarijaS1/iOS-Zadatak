@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "ServerAccessData.h"
+#import "Livescores.h"
 
 @interface DataController : NSObject
 
 @property (strong, nonatomic) ServerAccessData *serverData;
 
 + (DataController *)sharedInstance;
+
+- (void) setLivescores:(NSMutableArray *)livescores;
+- (NSMutableArray*)getLivescores;
+
+-(void)setEndedMatchesArray:(NSMutableArray *)endedMatchesArray;
+-(NSMutableArray*)getEndedMatchesArray;
 
 @end

@@ -27,10 +27,12 @@
 @property (nonatomic) long period_started;
 @property (strong, nonatomic) NSString *match_time;
 @property (strong, nonatomic) NSString *status;
-@property (strong, nonatomic) NSNumber *status_code;
+@property ( nonatomic) NSInteger status_code;
 @property (strong, nonatomic) Score *score;
 @property (strong, nonatomic) Goals *goals;
 @property (strong, nonatomic) Cards *cards;
 @property (strong, nonatomic) NSString *matchcast;
+
+@property (nonatomic) BOOL isFavourite;
 
 @end

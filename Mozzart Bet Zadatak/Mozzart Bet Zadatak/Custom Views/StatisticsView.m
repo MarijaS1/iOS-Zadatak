@@ -35,7 +35,7 @@
     }
    
     
-    self.homeTeamYellowCardsLabel.text = ([((Livescores*)[livescores objectAtIndex:indexPath.row]).cards.home_team.yellow count] == 0) ? @"-" : [NSString stringWithFormat:@"%ld", [((Livescores*)[livescores objectAtIndex:indexPath.row]).cards.home_team.yellow count]];
+    self.homeTeamYellowCardsLabel.text = ([((CardData*)((Livescores*)[livescores objectAtIndex:indexPath.row]).cards.home_team).yellow count] == 0) ? @"-" : [NSString stringWithFormat:@"%ld", [((Livescores*)[livescores objectAtIndex:indexPath.row]).cards.home_team.yellow count]];
     
     self.homeTeamRedCardsLabel.text = ([((Livescores*)[livescores objectAtIndex:indexPath.row]).cards.home_team.red count] == 0) ? @"-" : [NSString stringWithFormat:@"%ld", [((Livescores*)[livescores objectAtIndex:indexPath.row]).cards.home_team.red count]];
     

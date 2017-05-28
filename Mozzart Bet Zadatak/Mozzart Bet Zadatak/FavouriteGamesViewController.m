@@ -8,22 +8,49 @@
 
 #import "FavouriteGamesViewController.h"
 
+
 @interface FavouriteGamesViewController ()
+
+@property (nonatomic, strong) NSMutableArray *favouriteMatches;
 
 @end
 
 @implementation FavouriteGamesViewController
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.favouriteMatches = [[NSMutableArray alloc]init];
+       self.title = [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_LABEL andSybtype:SUBTYPE_TEXT andSuffix:@"favourites"];
+
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self getAllMatches];
+    for (Livescores *livescore in self.livescoresArray) {
+        if (livescore.isFavourite && ![self.favouriteMatches containsObject:livescore]) {
+            [self.favouriteMatches addObject:livescore];
+        }
+    }
+    
+    if (![self.favouriteMatches count]) {
+        [self.emptyView setHidden:NO];
+        [self.tblTableView setHidden:YES];
+    }else{
+        [self.emptyView setHidden:YES];
+        [self.tblTableView setHidden:NO];
+        self.tableArray = self.favouriteMatches;
+        [self.tblTableView reloadData];
+    }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+//    self.favouriteMatches = nil;
+}
+
 
 
 @end

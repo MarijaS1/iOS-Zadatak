@@ -12,6 +12,8 @@
 @interface DataController()
 
 @property (strong, nonatomic) RestService* restService;
+@property (strong, nonatomic) NSMutableArray* livescores;
+@property (strong, nonatomic) NSMutableArray* endedMatchesArray;
 
 @end
 
@@ -24,6 +26,8 @@
     }
     return _restService;
 }
+
+
 
 
 static DataController *sharedDataController = nil;
@@ -39,6 +43,7 @@ static DataController *sharedDataController = nil;
     return sharedDataController;
 }
 
+
 #pragma mark getters and setters
 
 - (ServerAccessData *) serverData
@@ -49,6 +54,31 @@ static DataController *sharedDataController = nil;
     }
     return _serverData;
 }
+
+- (void) setLivescores:(NSMutableArray *)livescores
+{
+    self.livescores = livescores;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:livescores] forKey:@"livescores"];
+    [defaults synchronize];
+    
+}
+-(NSMutableArray*)getLivescores{
+    return self.livescores;
+}
+
+
+-(void)setEndedMatchesArray:(NSMutableArray *)endedMatchesArray{
+    self.endedMatchesArray = endedMatchesArray;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:endedMatchesArray] forKey:@"endedMatchesArray"];
+    [defaults synchronize];
+}
+
+-(NSMutableArray*)getEndedMatchesArray{
+    return self.endedMatchesArray;
+}
+
 
 
 @end

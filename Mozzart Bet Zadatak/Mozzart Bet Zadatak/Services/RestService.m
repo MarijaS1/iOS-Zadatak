@@ -21,6 +21,7 @@
 @implementation RestService
 
 - (void) getAllMatchesWithSportID:(NSNumber *)sportID
+                      andWithType:(NSString *)type
                       withSuccess:(void (^)(LivescoreResponse *))success
                           failure:(void (^)(MozzartError *))failure {
     
@@ -33,6 +34,11 @@
     if (sportID) {
         [keys addObject:@"sport_id"];
         [objects addObject:sportID];
+    }
+    
+    if (type) {
+        [keys addObject:@"type"];
+        [objects addObject:type];
     }
     NSDictionary *parameters = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
     

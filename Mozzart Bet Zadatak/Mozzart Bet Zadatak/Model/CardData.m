@@ -10,4 +10,24 @@
 
 @implementation CardData
 
+- (id)initWithCoder:(NSCoder *)decoder
+{
+    self = [super init];
+    if(self) {
+        
+        self.yellow = [decoder decodeObjectForKey:@"yellow"];
+        self.red = [decoder decodeObjectForKey:@"red"];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder
+{
+    [encoder encodeObject:self.yellow forKey:@"yellow"];
+    [encoder encodeObject:self.red forKey:@"red"];
+    
+    
+}
+
+
 @end

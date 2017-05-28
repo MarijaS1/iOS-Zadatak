@@ -21,8 +21,9 @@
 @interface RestService : NSObject
 
 - (void) getAllMatchesWithSportID:(NSNumber *)sportID
+                      andWithType:(NSString *)type
                       withSuccess:(void (^)(LivescoreResponse *))success
-                          failure:(void (^)(MozzartError *))failure;
+                          failure:(void (^)(MozzartError *))failure ;
 
 
 

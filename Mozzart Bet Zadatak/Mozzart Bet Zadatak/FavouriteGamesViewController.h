@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FavouriteGamesViewController : BasicViewController
+@interface FavouriteGamesViewController : BasicTableViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UIView *emptyView;
 
 
 @end

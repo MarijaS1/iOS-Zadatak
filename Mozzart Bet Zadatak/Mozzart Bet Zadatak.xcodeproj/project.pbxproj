@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0B03371EDB1F4200CFE84F /* LiveMatchesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B03361EDB1F4200CFE84F /* LiveMatchesTableViewController.m */; };
+		1A0B033A1EDB1F6300CFE84F /* FinishedMatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B03391EDB1F6300CFE84F /* FinishedMatchesViewController.m */; };
+		1A0B033D1EDB32B100CFE84F /* NextGamesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B033C1EDB32B100CFE84F /* NextGamesTableViewController.m */; };
 		1A0D0BD21ED99B0000E5A366 /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0BD11ED99B0000E5A366 /* ObjectMapper.m */; };
 		1A0D0BD91ED9A27D00E5A366 /* MetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0BD81ED9A27D00E5A366 /* MetaData.m */; };
 		1A0D0BDD1ED9A2CA00E5A366 /* RestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0BDC1ED9A2CA00E5A366 /* RestService.m */; };
@@ -76,6 +79,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0B03351EDB1F4200CFE84F /* LiveMatchesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiveMatchesTableViewController.h; path = ViewControllers/LiveMatchesTableViewController.h; sourceTree = "<group>"; };
+		1A0B03361EDB1F4200CFE84F /* LiveMatchesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiveMatchesTableViewController.m; path = ViewControllers/LiveMatchesTableViewController.m; sourceTree = "<group>"; };
+		1A0B03381EDB1F6300CFE84F /* FinishedMatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FinishedMatchesViewController.h; path = ViewControllers/FinishedMatchesViewController.h; sourceTree = "<group>"; };
+		1A0B03391EDB1F6300CFE84F /* FinishedMatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FinishedMatchesViewController.m; path = ViewControllers/FinishedMatchesViewController.m; sourceTree = "<group>"; };
+		1A0B033B1EDB32B100CFE84F /* NextGamesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NextGamesTableViewController.h; path = ViewControllers/NextGamesTableViewController.h; sourceTree = "<group>"; };
+		1A0B033C1EDB32B100CFE84F /* NextGamesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NextGamesTableViewController.m; path = ViewControllers/NextGamesTableViewController.m; sourceTree = "<group>"; };
 		1A0D0BD01ED99B0000E5A366 /* ObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectMapper.h; path = Data/ObjectMapper.h; sourceTree = "<group>"; };
 		1A0D0BD11ED99B0000E5A366 /* ObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectMapper.m; path = Data/ObjectMapper.m; sourceTree = "<group>"; };
 		1A0D0BD71ED9A27D00E5A366 /* MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetaData.h; path = "Mozzart Bet Zadatak/Model/MetaData.h"; sourceTree = "<group>"; };
@@ -402,6 +411,12 @@
 				1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */,
 				1A25FA381ED8C5B600E02A6B /* FavouriteGamesViewController.h */,
 				1A25FA391ED8C5B600E02A6B /* FavouriteGamesViewController.m */,
+				1A0B03351EDB1F4200CFE84F /* LiveMatchesTableViewController.h */,
+				1A0B03361EDB1F4200CFE84F /* LiveMatchesTableViewController.m */,
+				1A0B03381EDB1F6300CFE84F /* FinishedMatchesViewController.h */,
+				1A0B03391EDB1F6300CFE84F /* FinishedMatchesViewController.m */,
+				1A0B033B1EDB32B100CFE84F /* NextGamesTableViewController.h */,
+				1A0B033C1EDB32B100CFE84F /* NextGamesTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -775,8 +790,10 @@
 				1A0D0C2A1EDA261300E5A366 /* HeaderTableView.m in Sources */,
 				1A0D0BE01ED9A32300E5A366 /* MozzartError.m in Sources */,
 				1A0D0BF51ED9B5B600E5A366 /* Goals.m in Sources */,
+				1A0B033D1EDB32B100CFE84F /* NextGamesTableViewController.m in Sources */,
 				1ABAA5831ED8CCFA007767F5 /* UIColor+Colors.m in Sources */,
 				1A25FA311ED8C5B600E02A6B /* main.m in Sources */,
+				1A0B033A1EDB1F6300CFE84F /* FinishedMatchesViewController.m in Sources */,
 				1A0D0C071ED9C66000E5A366 /* DataController.m in Sources */,
 				1ABAA5861ED8CD70007767F5 /* UIFont+Font.m in Sources */,
 				1A0D0C0C1ED9C86D00E5A366 /* NSURL+PathParameters.m in Sources */,
@@ -786,6 +803,7 @@
 				1A0D0C391EDA59F500E5A366 /* KLCPopup.m in Sources */,
 				1A0D0C1F1EDA152000E5A366 /* V8HorizontalPickerView.m in Sources */,
 				1A0D0C341EDA38BB00E5A366 /* MatchTableViewCell.m in Sources */,
+				1A0B03371EDB1F4200CFE84F /* LiveMatchesTableViewController.m in Sources */,
 				1A0D0C3C1EDA5A3400E5A366 /* StatisticsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

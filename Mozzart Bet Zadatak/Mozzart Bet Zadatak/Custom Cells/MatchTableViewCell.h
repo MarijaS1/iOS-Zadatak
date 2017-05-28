@@ -13,6 +13,7 @@
 @protocol MatchTableViewCellDelegate <NSObject>
 
 -(void)scoreTapped:(id)sender;
+-(void)starButtonTapped:(UIButton *)sender;
 
 @end
 

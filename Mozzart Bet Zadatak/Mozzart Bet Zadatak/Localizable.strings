@@ -35,13 +35,14 @@
 "label_text_favourites" = "Izabrane";
 "label_text_live" = "U toku";
 "label_text_ended" = "Završene";
+"label_text_next" = "Naredne";
 
 /*GENERIC STRINGS*/
 
 
 "alert_message_servicetimeout" = "Service timeout";
 
-"alert_message_pleasewait" = "Please wait...";
+"alert_message_pleasewait" = "Učitavanje...";
 
 "alert_message_processing" = "Processing...";
 

@@ -12,6 +12,7 @@
 
 @interface BasicTableViewController ()
 
+
 @end
 
 @implementation BasicTableViewController
@@ -20,13 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self configureHeaderView]; //configure header view
     // Set TableView DataSource & Delegate
     self.tblTableView.dataSource = self;
     self.tblTableView.delegate = self;
+    [self configureTableView]; //configure tableview
     
 }
 
 #pragma mark - Abstract methods
+
 
 // Number of rows
 - (NSInteger)setTableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -35,11 +39,31 @@
 
 // Cell for row
 - (UITableViewCell *)setTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [[UITableViewCell alloc] init];
+    UITableViewCell *cell = nil;
+    
+    if (tableView == self.tblTableView) {
+        MatchTableViewCell* matchCell = [tableView dequeueReusableCellWithIdentifier:MATCH_TABLE_VIEW_CELL_IDENTIFIER];
+        if (matchCell == nil)
+        {
+            matchCell = [[MatchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MATCH_TABLE_VIEW_CELL_IDENTIFIER];
+        }
+        if (self.tableArray) {
+            matchCell.selectionStyle= UITableViewCellSelectionStyleNone;
+            matchCell.starButton.tag = indexPath.row;
+            [matchCell setupMatchCellWithLivescoresArray:self.tableArray andWithIndexPath:indexPath];
+            
+        }
+        matchCell.delegate = self;
+        cell = matchCell;
+        
+    }
+    return cell;
+
 }
 
 // Will display cell
 - (void)setTableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 // Height for row
@@ -136,8 +160,55 @@
         KLCPopup* popup = [KLCPopup popupWithContentView:headerTableView];
         [popup show];
     }
-  
     
+}
+
+#pragma  mark -Private methods
+
+-(void)getAllMatches {
+    NSUserDefaults *keychain = [NSUserDefaults standardUserDefaults];
+    NSData *allMatchesData = [keychain objectForKey:@"allMatchesArray"];
+    if (allMatchesData)
+    {
+        NSMutableArray *allMatchesArray = [NSKeyedUnarchiver unarchiveObjectWithData:allMatchesData];
+        if (allMatchesArray)
+        {
+            self.livescoresArray = allMatchesArray;
+        }
+    }
+}
+
+-(void)saveAllMatches{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.livescoresArray] forKey:@"allMatchesArray"];
+    [defaults synchronize];
+}
+
+
+-(void)starButtonTapped:(UIButton *)sender {
+    
+    [self getAllMatches];
+    for (Livescores *livescores in self.livescoresArray) {
+        if (livescores.match_id == ((Livescores*)[self.tableArray objectAtIndex:sender.tag]).match_id) {
+            livescores.isFavourite = !livescores.isFavourite;
+            [self saveAllMatches];
+            [self.tblTableView reloadData];
+        }
+    }    
+}
+
+-(void)configureHeaderView {
+    HeaderTableView *headerTableView = [[[NSBundle mainBundle] loadNibNamed:@"HeaderTableView" owner:self options:nil]firstObject];
+    [self.headerView addSubview:headerTableView];
+    [self.headerView layoutIfNeeded];
+}
+
+// Configure table view
+- (void)configureTableView {
+    [self.tblTableView registerNib:[UINib nibWithNibName:@"MatchTableViewCell" bundle:nil] forCellReuseIdentifier:MATCH_TABLE_VIEW_CELL_IDENTIFIER];
+    self.tblTableView.rowHeight = UITableViewAutomaticDimension;
+    self.tblTableView.estimatedRowHeight = 44;
+    [self.tblTableView reloadData];
 }
 
 

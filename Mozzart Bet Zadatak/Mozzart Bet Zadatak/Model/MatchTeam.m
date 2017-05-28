@@ -10,4 +10,23 @@
 
 @implementation MatchTeam
 
+- (id)initWithCoder:(NSCoder *)decoder
+{
+    self = [super init];
+    if(self) {
+        
+        self.team_id = [decoder decodeIntegerForKey:@"team_id"];
+        self.name = [decoder decodeObjectForKey:@"name"];
+           }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder
+{
+    
+    [encoder encodeInteger:self.team_id forKey:@"team_id"];
+    [encoder encodeObject:self.name forKey:@"name"];
+    }
+
+
 @end

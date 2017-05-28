@@ -22,6 +22,7 @@
     [tapAction setCancelsTouchesInView:NO];
     tapAction.numberOfTapsRequired = 1;
     [self.scoreLabel addGestureRecognizer:tapAction];
+    
 
 }
 
@@ -38,6 +39,7 @@
 }
 
 -(void)setupMatchCellWithLivescoresArray:(NSArray*)livescores andWithIndexPath:(NSIndexPath*)indexPath{
+    self.starButton.selected = ((Livescores*)[livescores objectAtIndex:indexPath.row]).isFavourite;
     
     [self.flagImageView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", FLAG_IMAGE_URL, ((Livescores*)[livescores objectAtIndex:indexPath.row]).category_id]] placeholderImage:[UIImage imageNamed:@"second"]];
     self.timeLabel.text = ((Livescores*)[livescores objectAtIndex:indexPath.row]).match_time;
@@ -46,6 +48,12 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"%ld : %ld", (long)((Livescores*)[livescores objectAtIndex:indexPath.row]).score.current.home_team, (long)((Livescores*)[livescores objectAtIndex:indexPath.row]).score.current.guest_team];
     
 }
+
+- (IBAction)starButtonTapped:(UIButton *)sender {
+     sender.selected = !sender.selected;
+    [self.delegate starButtonTapped:sender];
+}
+
 
 
 
