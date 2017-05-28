@@ -10,6 +10,7 @@
 #import "LivescoreResponse.h"
 #import "MatchTableViewCell.h"
 #import  "HeaderTableView.h"
+#import "LocalizableStringService.h"
 #define SPORT_ID    1
 
 @interface AllGamesViewController ()
@@ -25,6 +26,7 @@
       HeaderTableView *headerTableView = [[[NSBundle mainBundle] loadNibNamed:@"HeaderTableView" owner:self options:nil]firstObject];
     [self.headerView addSubview:headerTableView];
     [self.headerView layoutIfNeeded];
+    self.title = [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_LABEL andSybtype:SUBTYPE_TEXT andSuffix:@"allgames"];
 //    
 //    self.headerView = headerTableView;
     [self.restService getAllMatchesWithSportID:[NSNumber numberWithInt:SPORT_ID] withSuccess:^(LivescoreResponse *livescoresResponse){
@@ -68,6 +70,7 @@
                 matchCell = [[MatchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MATCH_TABLE_VIEW_CELL_IDENTIFIER];
             }
             if (self.livescoresArray) {
+                matchCell.selectionStyle= UITableViewCellSelectionStyleNone;
                 [matchCell setupMatchCellWithLivescoresArray:self.livescoresArray andWithIndexPath:indexPath];
 
             }

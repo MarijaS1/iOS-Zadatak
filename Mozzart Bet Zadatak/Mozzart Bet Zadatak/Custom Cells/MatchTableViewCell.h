@@ -12,7 +12,7 @@
 
 @protocol MatchTableViewCellDelegate <NSObject>
 
--(void)scoreTapped;
+-(void)scoreTapped:(id)sender;
 
 @end
 

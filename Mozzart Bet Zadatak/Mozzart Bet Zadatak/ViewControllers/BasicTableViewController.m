@@ -7,6 +7,8 @@
 //
 
 #import "BasicTableViewController.h"
+#import "KLCPopup.h"
+#import "StatisticsView.h"
 
 @interface BasicTableViewController ()
 
@@ -21,6 +23,7 @@
     // Set TableView DataSource & Delegate
     self.tblTableView.dataSource = self;
     self.tblTableView.delegate = self;
+    
 }
 
 #pragma mark - Abstract methods
@@ -117,9 +120,23 @@
 
 #pragma mark - MatchTableViewCellDelegate
 
--(void)scoreTapped{
+-(void)scoreTapped:(id)sender{
     NSLog(@"Score tapped");
     //preko self.tblArray dobijas sve podatke = livescoreArray
+    if ([sender isKindOfClass:[UITapGestureRecognizer class]]) {
+        UITapGestureRecognizer *gesture = (UITapGestureRecognizer*)sender;
+        CGPoint hitPoint = [gesture.view convertPoint:CGPointZero toView:self.tblTableView];
+        NSIndexPath *hitIndex = [self.tblTableView indexPathForRowAtPoint:hitPoint];
+        StatisticsView *headerTableView = [[[NSBundle mainBundle] loadNibNamed:@"StatisticsView" owner:self options:nil]firstObject];
+//        contentView.backgroundColor = [UIColor orangeColor];
+//        contentView.frame = CGRectMake(0.0, 0.0, 100.0, 100.0);
+        [headerTableView setupSatisticsViewWithLivescoresArray:self.tableArray andWithIndexPath:hitIndex];
+        headerTableView.autoresizesSubviews = YES;
+        [headerTableView layoutIfNeeded];
+        KLCPopup* popup = [KLCPopup popupWithContentView:headerTableView];
+        [popup show];
+    }
+  
     
 }
 

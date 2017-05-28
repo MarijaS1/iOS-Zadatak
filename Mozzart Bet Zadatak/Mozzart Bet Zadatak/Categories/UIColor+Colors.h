@@ -10,10 +10,6 @@
 
 @interface UIColor (Colors)
 
-/*
- *Color R:238 G:0 B:139
- */
-+ (UIColor *)getPinkColor;
 
 /*
  *Color R:43 G:43 B:43
@@ -51,10 +47,13 @@
 + (UIColor *)getWhiteColor;
 
 /*
- *Color R:59 G:89 B:152
+ *Color R:32 G:60 B:119
  */
-+ (UIColor *)getFBBlueColor;
++ (UIColor *)getBlueColor;
 
-
+/*
+ *Color R:253 G:184 B:19
+ */
++ (UIColor *)getYellowColor;
 
 @end

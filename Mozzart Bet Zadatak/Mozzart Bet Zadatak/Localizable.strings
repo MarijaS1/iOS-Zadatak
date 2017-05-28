@@ -29,6 +29,13 @@
 /*TEST MESSAGE*/
 "messagetest" = "Test message";
 
+/*NAVIGATION TITLES*/
+
+"label_text_allgames" = "Sve utakmice";
+"label_text_favourites" = "Izabrane";
+"label_text_live" = "U toku";
+"label_text_ended" = "Završene";
+
 /*GENERIC STRINGS*/
 
 

@@ -33,6 +33,8 @@
 		1A0D0C341EDA38BB00E5A366 /* MatchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C321EDA38BB00E5A366 /* MatchTableViewCell.m */; };
 		1A0D0C351EDA38BB00E5A366 /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D0C331EDA38BB00E5A366 /* MatchTableViewCell.xib */; };
 		1A0D0C391EDA59F500E5A366 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C381EDA59F500E5A366 /* KLCPopup.m */; };
+		1A0D0C3C1EDA5A3400E5A366 /* StatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0C3B1EDA5A3400E5A366 /* StatisticsView.m */; };
+		1A0D0C3E1EDA5A4500E5A366 /* StatisticsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D0C3D1EDA5A4500E5A366 /* StatisticsView.xib */; };
 		1A25FA311ED8C5B600E02A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA301ED8C5B600E02A6B /* main.m */; };
 		1A25FA341ED8C5B600E02A6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA331ED8C5B600E02A6B /* AppDelegate.m */; };
 		1A25FA371ED8C5B600E02A6B /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FA361ED8C5B600E02A6B /* AllGamesViewController.m */; };
@@ -125,6 +127,9 @@
 		1A0D0C331EDA38BB00E5A366 /* MatchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MatchTableViewCell.xib; path = "Custom Cells/MatchTableViewCell.xib"; sourceTree = "<group>"; };
 		1A0D0C371EDA59F500E5A366 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KLCPopup.h; path = Libs/KLCPopup/KLCPopup.h; sourceTree = "<group>"; };
 		1A0D0C381EDA59F500E5A366 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KLCPopup.m; path = Libs/KLCPopup/KLCPopup.m; sourceTree = "<group>"; };
+		1A0D0C3A1EDA5A3400E5A366 /* StatisticsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatisticsView.h; path = "Custom Views/StatisticsView.h"; sourceTree = "<group>"; };
+		1A0D0C3B1EDA5A3400E5A366 /* StatisticsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsView.m; path = "Custom Views/StatisticsView.m"; sourceTree = "<group>"; };
+		1A0D0C3D1EDA5A4500E5A366 /* StatisticsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsView.xib; sourceTree = "<group>"; };
 		1A25FA2C1ED8C5B600E02A6B /* Mozzart Bet Zadatak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mozzart Bet Zadatak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A25FA301ED8C5B600E02A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A25FA321ED8C5B600E02A6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -287,6 +292,9 @@
 				1A0D0C281EDA261300E5A366 /* HeaderTableView.h */,
 				1A0D0C291EDA261300E5A366 /* HeaderTableView.m */,
 				1A0D0C2B1EDA263000E5A366 /* HeaderTableView.xib */,
+				1A0D0C3A1EDA5A3400E5A366 /* StatisticsView.h */,
+				1A0D0C3B1EDA5A3400E5A366 /* StatisticsView.m */,
+				1A0D0C3D1EDA5A4500E5A366 /* StatisticsView.xib */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -577,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A25FA421ED8C5B600E02A6B /* LaunchScreen.storyboard in Resources */,
+				1A0D0C3E1EDA5A4500E5A366 /* StatisticsView.xib in Resources */,
 				1ABAA5761ED8CB56007767F5 /* Localizable.strings in Resources */,
 				1A25FA3F1ED8C5B600E02A6B /* Assets.xcassets in Resources */,
 				1A0D0C2C1EDA263000E5A366 /* HeaderTableView.xib in Resources */,
@@ -777,6 +786,7 @@
 				1A0D0C391EDA59F500E5A366 /* KLCPopup.m in Sources */,
 				1A0D0C1F1EDA152000E5A366 /* V8HorizontalPickerView.m in Sources */,
 				1A0D0C341EDA38BB00E5A366 /* MatchTableViewCell.m in Sources */,
+				1A0D0C3C1EDA5A3400E5A366 /* StatisticsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

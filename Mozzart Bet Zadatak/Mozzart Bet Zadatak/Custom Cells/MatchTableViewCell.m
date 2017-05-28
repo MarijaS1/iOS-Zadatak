@@ -7,7 +7,6 @@
 //
 
 #import "MatchTableViewCell.h"
-#import <DTCoreText/DTCoreText.h>
 
 
 #define  FLAG_IMAGE_URL     @"http://static.mozzartsport.com/images/flags/26x17/"
@@ -18,7 +17,7 @@
     [super awakeFromNib];
     // Initialization code
     [self.scoreLabel setFont:[UIFont getBoldFontForSize:14]];
-    UITapGestureRecognizer *tapAction = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scoreTapped)];
+    UITapGestureRecognizer *tapAction = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scoreTapped:)];
     [tapAction setEnabled:YES];
     [tapAction setCancelsTouchesInView:NO];
     tapAction.numberOfTapsRequired = 1;
@@ -34,8 +33,8 @@
 
 #pragma mark - Private methods
 
-- (void)scoreTapped {
-      [self.delegate scoreTapped];       
+- (void)scoreTapped: (id)sender{
+    [self.delegate scoreTapped:sender];
 }
 
 -(void)setupMatchCellWithLivescoresArray:(NSArray*)livescores andWithIndexPath:(NSIndexPath*)indexPath{

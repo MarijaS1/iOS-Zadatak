@@ -44,8 +44,18 @@
     return [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:ALPHA_1];
 }
 
-+ (UIColor *)getFBBlueColor {
-    return [UIColor colorWithRed:59/255.0 green:89/255.0 blue:152/255.0 alpha:ALPHA_1];
+/*
+ *Color R:32 G:60 B:119
+ */
++ (UIColor *)getBlueColor{
+    return [UIColor colorWithRed:32/255.0 green:60/255.0 blue:119/255.0 alpha:ALPHA_1];
+}
+
+/*
+ *Color R:253 G:184 B:19
+ */
++ (UIColor *)getYellowColor{
+    return [UIColor colorWithRed:253/255.0 green:184/255.0 blue:19/255.0 alpha:ALPHA_1];
 }
 
 
