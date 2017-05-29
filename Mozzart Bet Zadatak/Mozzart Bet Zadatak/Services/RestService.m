@@ -22,6 +22,8 @@
 
 - (void) getAllMatchesWithSportID:(NSNumber *)sportID
                       andWithType:(NSString *)type
+                         fromTime:(NSTimeInterval )fromTime
+                        untilTime:(NSTimeInterval )untilTime
                       withSuccess:(void (^)(LivescoreResponse *))success
                           failure:(void (^)(MozzartError *))failure {
     
@@ -40,6 +42,17 @@
         [keys addObject:@"type"];
         [objects addObject:type];
     }
+    
+    if (fromTime) {
+        [keys addObject:@"from_time"];
+        [objects addObject:[NSNumber numberWithDouble:fromTime]];
+    }
+    
+    if (untilTime) {
+        [keys addObject:@"until_time"];
+        [objects addObject:[NSNumber numberWithDouble:untilTime]];
+    }
+    
     NSDictionary *parameters = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
     
     [self sendRequestWithUrl:url andPathPattern:pathPattern andParams:parameters andSendParametersAsJson:NO andMethod:REQUEST_METHOD_GET andWithTag:OP_TAG_LIVESCORES andWithObjectMapping:objectMapping completionBlockWithSuccess:success failure:failure];

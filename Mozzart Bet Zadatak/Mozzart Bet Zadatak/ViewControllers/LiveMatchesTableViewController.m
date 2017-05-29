@@ -34,7 +34,7 @@
 -(void)updateData {
     [self showProgressWithInfoMessage: [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_ALERT andSybtype:SUBTYPE_MESSAGE andSuffix:@"pleasewait"]];
     
-    [self.restService getAllMatchesWithSportID:[NSNumber numberWithInt:SPORT_ID] andWithType:nil withSuccess:^(LivescoreResponse *livescoresResponse){
+    [self.restService getAllMatchesWithSportID:[NSNumber numberWithInt:SPORT_ID] andWithType:nil fromTime:0 untilTime:0 withSuccess:^(LivescoreResponse *livescoresResponse){
         [self hideProgressAndMessage];
         NSLog(@"%@", livescoresResponse);
         self.livescoresArray = livescoresResponse.livescores;

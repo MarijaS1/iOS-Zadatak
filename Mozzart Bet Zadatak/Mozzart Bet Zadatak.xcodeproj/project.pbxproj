@@ -560,6 +560,7 @@
 				TargetAttributes = {
 					1A25FA2B1ED8C5B600E02A6B = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 534YMW29X2;
 						ProvisioningStyle = Automatic;
 					};
 					1A25FA471ED8C5B600E02A6B = {
@@ -900,7 +901,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -943,7 +944,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -956,6 +957,7 @@
 			baseConfigurationReference = 82DA122991D2BA3F4532FEC5 /* Pods-Mozzart Bet Zadatak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 534YMW29X2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mozzart Bet Zadatak/Mozzart-Prefix.pch";
 				INFOPLIST_FILE = "Mozzart Bet Zadatak/Info.plist";
@@ -970,6 +972,7 @@
 			baseConfigurationReference = 7D34D865A8CEB0F5282C7769 /* Pods-Mozzart Bet Zadatak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 534YMW29X2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mozzart Bet Zadatak/Mozzart-Prefix.pch";
 				INFOPLIST_FILE = "Mozzart Bet Zadatak/Info.plist";

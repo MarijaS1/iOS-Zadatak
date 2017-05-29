@@ -22,6 +22,8 @@
 
 - (void) getAllMatchesWithSportID:(NSNumber *)sportID
                       andWithType:(NSString *)type
+                         fromTime:(NSTimeInterval )fromTime
+                        untilTime:(NSTimeInterval )untilTime
                       withSuccess:(void (^)(LivescoreResponse *))success
                           failure:(void (^)(MozzartError *))failure ;
 

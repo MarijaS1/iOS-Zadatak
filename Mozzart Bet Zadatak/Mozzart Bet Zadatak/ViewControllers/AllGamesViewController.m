@@ -34,7 +34,7 @@
     
     self.title = [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_LABEL andSybtype:SUBTYPE_TEXT andSuffix:@"allgames"];
     [self configureProperties];     // Configure properties
-      [self configureDayAndMonthArray];      // Configure day and month array
+    [self configureDayAndMonthArray];      // Configure day and month array
     [self updateData];
     
 }
@@ -44,7 +44,7 @@
     [self getAllMatches];
     self.tableArray = self.livescoresArray;
     [self.tblTableView reloadData];
-     [self.pickerView setHidden:YES];
+    [self.pickerView setHidden:YES];
 }
 
 
@@ -57,7 +57,9 @@
     self.nextMatchesArray = [[NSMutableArray alloc]init];
     
     self.dateFormatter = [[NSDateFormatter alloc] init]; // Date formatter
-    [self.dateFormatter setDateFormat:@"dd/MM"];
+    [self.dateFormatter setDateFormat:@"dd/MM/yyyy"];
+    //    [self.dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    //    [self.dateFormatter setTimeStyle:NSDateFormatterShortStyle];
 }
 
 
@@ -65,15 +67,15 @@
 // Configure day array
 - (void)configureDayAndMonthArray {
     NSDate *now = [NSDate date];
-
+    
     self.days = [NSMutableArray array];
-   //get 7 days before today including today
-  for (NSInteger i = -7; i <= 0; i++) {
-      self.components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[now dateByAddingTimeInterval:i*24*60*60]];
-      [self.days addObject:[NSString stringWithFormat:@"%ld/%ld", [self.components day], [self.components month]]];
-     
+    //get 7 days before today including today
+    for (NSInteger i = -7; i <= 0; i++) {
+        self.components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[now dateByAddingTimeInterval:i*24*60*60]];
+        [self.days addObject:[NSString stringWithFormat:@"%ld/%ld", [self.components day], [self.components month]]];
+        
     }
-     //get 7 days after today without today
+    //get 7 days after today without today
     for (NSInteger i = 1; i <= 7; i++) {
         self.components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[now dateByAddingTimeInterval:i*24*60*60]];
         [self.days addObject:[NSString stringWithFormat:@"%ld/%ld", [self.components day], [self.components month]]];
@@ -102,8 +104,7 @@
 -(void)updateData {
     [self showProgressWithInfoMessage: [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_ALERT andSybtype:SUBTYPE_MESSAGE andSuffix:@"pleasewait"]];
     
-    [self.restService getAllMatchesWithSportID:[NSNumber numberWithInt:SPORT_ID] andWithType:nil withSuccess:^(LivescoreResponse *livescoresResponse){
-        
+    [self.restService getAllMatchesWithSportID:[NSNumber numberWithInt:SPORT_ID] andWithType:nil fromTime:0 untilTime:0 withSuccess:^(LivescoreResponse *livescoresResponse) {
         NSLog(@"%@", livescoresResponse);
         self.livescoresArray = [livescoresResponse.livescores mutableCopy];
         [self filterMatches];
@@ -113,10 +114,12 @@
         [self hideProgressAndMessage];
         self.tableArray = self.livescoresArray;
         [self.tblTableView reloadData];
-    }failure:^(MozzartError *error) {
+    } failure:^(MozzartError *error) {
+        
         NSLog(@"Error");
+        
     }];
-
+    
 }
 
 
@@ -143,6 +146,32 @@
     [defaults synchronize];
 }
 
+-(NSDate *)beginningOfDay:(NSDate *)date
+{
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDateComponents *components = [cal components:( NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitMinute | NSCalendarUnitDay ) fromDate:date];
+    
+    [components setHour:0];
+    [components setMinute:0];
+    [components setSecond:0];
+    
+    return [cal dateFromComponents:components];
+    
+}
+
+-(NSDate *)endOfDay:(NSDate *)date
+{
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDateComponents *components = [cal components:( NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitMinute | NSCalendarUnitDay ) fromDate:date];
+    
+    [components setHour:23];
+    [components setMinute:59];
+    [components setSecond:59];
+    
+    return [cal dateFromComponents:components];
+    
+}
+
 
 #pragma mark - UITableViewDataSource
 
@@ -157,7 +186,27 @@
 }
 
 - (IBAction)doneButtonPressed:(UIButton *)sender {
-    NSLog(self.selectedDate);
+    
+    NSString *date = [NSString stringWithFormat:@"%@/2017", self.selectedDate];
+    NSDate *dateFromString = [self.dateFormatter dateFromString:date];
+    NSDate *beggingingOfDate = [self beginningOfDay:dateFromString];
+    NSDate *endOfDate = [self endOfDay:dateFromString];
+    NSTimeInterval epochTimeBeggining = [beggingingOfDate timeIntervalSince1970];
+    NSTimeInterval endEpochTime = [endOfDate timeIntervalSince1970];
+    
+    [self showProgressWithInfoMessage: [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_ALERT andSybtype:SUBTYPE_MESSAGE andSuffix:@"pleasewait"]];
+    
+    [self.restService getAllMatchesWithSportID:[NSNumber numberWithInt:SPORT_ID] andWithType:nil fromTime:epochTimeBeggining untilTime:endEpochTime withSuccess:^(LivescoreResponse *livescoresResponse) {
+        NSLog(@"%@", livescoresResponse);
+        self.livescoresArray = [livescoresResponse.livescores mutableCopy];
+        [self hideProgressAndMessage];
+        self.tableArray = self.livescoresArray;
+        [self.tblTableView reloadData];
+    } failure:^(MozzartError *error) {
+        
+        NSLog(@"Error");
+        
+    }];
     [self.pickerView setHidden:YES];
 }
 
@@ -166,9 +215,7 @@
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView;
 {
-    
     return 1;
-    
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
@@ -185,7 +232,7 @@
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-  self.selectedDate = [self.days objectAtIndex:row];
+    self.selectedDate = [self.days objectAtIndex:row];
 }
 
 
