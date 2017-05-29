@@ -47,7 +47,24 @@
     self.guestTeamLabel.text = ((Livescores*)[livescores objectAtIndex:indexPath.row]).guest_team.name;
     self.scoreLabel.text = [NSString stringWithFormat:@"%ld : %ld", (long)((Livescores*)[livescores objectAtIndex:indexPath.row]).score.current.home_team, (long)((Livescores*)[livescores objectAtIndex:indexPath.row]).score.current.guest_team];
     
+    NSDate* date = [NSDate dateWithTimeIntervalSince1970:((Livescores*)[livescores objectAtIndex:indexPath.row]).started];
+    if ([self.timeLabel.text isEqualToString:@"-"]) {
+        self.timeLabel.text = [self getStringDate:date];
+    }
+    
 }
+
+-(NSString *)getStringDate:(NSDate *)date
+{
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDateComponents *components = [cal components:( NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitMinute | NSCalendarUnitDay ) fromDate:date];
+    
+    return [NSString stringWithFormat:@"%ld:%ld \n %ld/%ld", (long)components.hour, (long)components.minute, (long)components.day, (long)components.month];
+    
+}
+
+
+#pragma mark - Action methods
 
 - (IBAction)starButtonTapped:(UIButton *)sender {
      sender.selected = !sender.selected;
