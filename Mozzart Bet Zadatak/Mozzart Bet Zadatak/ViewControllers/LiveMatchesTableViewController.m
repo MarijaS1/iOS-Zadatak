@@ -37,7 +37,7 @@
     [self.restService getAllMatchesWithSportID:[NSNumber numberWithInt:SPORT_ID] andWithType:nil fromTime:0 untilTime:0 withSuccess:^(LivescoreResponse *livescoresResponse){
         [self hideProgressAndMessage];
         NSLog(@"%@", livescoresResponse);
-        self.livescoresArray = livescoresResponse.livescores;
+        self.livescoresArray = [livescoresResponse.livescores mutableCopy];
         self.tableArray = [self.livescoresArray mutableCopy];
         [self.tblTableView reloadData];
     }failure:^(MozzartError *error) {

@@ -14,6 +14,8 @@
 #pragma mark - Properties
 @property (nonatomic, strong) NSMutableArray *tableArray;
 @property (strong, nonatomic) NSMutableArray *livescoresArray;
+@property (strong, nonatomic) NSMutableArray *endMatchesArray;
+@property (strong, nonatomic) NSMutableArray *nextMatchesArray;
 
 #pragma mark - IBOutlet's
 @property (weak, nonatomic) IBOutlet UITableView *tblTableView;
@@ -30,4 +32,7 @@
 
 -(void)getAllMatches;
 -(void)saveAllMatches;
+-(void)saveEndedMatches;
+-(void)saveNextMatches;
+
 @end

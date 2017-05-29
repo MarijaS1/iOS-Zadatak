@@ -146,14 +146,11 @@
 
 -(void)scoreTapped:(id)sender{
     NSLog(@"Score tapped");
-    //preko self.tblArray dobijas sve podatke = livescoreArray
     if ([sender isKindOfClass:[UITapGestureRecognizer class]]) {
         UITapGestureRecognizer *gesture = (UITapGestureRecognizer*)sender;
         CGPoint hitPoint = [gesture.view convertPoint:CGPointZero toView:self.tblTableView];
         NSIndexPath *hitIndex = [self.tblTableView indexPathForRowAtPoint:hitPoint];
         StatisticsView *headerTableView = [[[NSBundle mainBundle] loadNibNamed:@"StatisticsView" owner:self options:nil]firstObject];
-//        contentView.backgroundColor = [UIColor orangeColor];
-//        contentView.frame = CGRectMake(0.0, 0.0, 100.0, 100.0);
         [headerTableView setupSatisticsViewWithLivescoresArray:self.tableArray andWithIndexPath:hitIndex];
         headerTableView.autoresizesSubviews = YES;
         [headerTableView layoutIfNeeded];
@@ -161,6 +158,34 @@
         [popup show];
     }
     
+}
+
+
+-(void)starButtonTapped:(UIButton *)sender {
+    [self getAllMatches];
+    for (Livescores *livescores in self.livescoresArray) {
+        if (livescores.match_id == ((Livescores*)[self.tableArray objectAtIndex:sender.tag]).match_id) {
+            livescores.isFavourite = !livescores.isFavourite;
+            [self saveAllMatches];
+            [self.tblTableView reloadData];
+        }
+    }
+    
+    for (Livescores *livescores in self.endMatchesArray) {
+        if (livescores.match_id == ((Livescores*)[self.tableArray objectAtIndex:sender.tag]).match_id) {
+            livescores.isFavourite = !livescores.isFavourite;
+            [self saveEndedMatches];
+            [self.tblTableView reloadData];
+        }
+    }
+    
+    for (Livescores *livescores in self.nextMatchesArray) {
+        if (livescores.match_id == ((Livescores*)[self.tableArray objectAtIndex:sender.tag]).match_id) {
+            livescores.isFavourite = !livescores.isFavourite;
+            [self saveNextMatches];
+            [self.tblTableView reloadData];
+        }
+    }
 }
 
 #pragma  mark -Private methods
@@ -178,24 +203,26 @@
     }
 }
 
+
 -(void)saveAllMatches{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.livescoresArray] forKey:@"allMatchesArray"];
     [defaults synchronize];
 }
 
-
--(void)starButtonTapped:(UIButton *)sender {
-    
-    [self getAllMatches];
-    for (Livescores *livescores in self.livescoresArray) {
-        if (livescores.match_id == ((Livescores*)[self.tableArray objectAtIndex:sender.tag]).match_id) {
-            livescores.isFavourite = !livescores.isFavourite;
-            [self saveAllMatches];
-            [self.tblTableView reloadData];
-        }
-    }    
+-(void)saveEndedMatches{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.endMatchesArray] forKey:@"endedMatchesArray"];
+    [defaults synchronize];
 }
+
+-(void)saveNextMatches{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.nextMatchesArray] forKey:@"nextMatchesArray"];
+    [defaults synchronize];
+}
+
+
 
 -(void)configureHeaderView {
     HeaderTableView *headerTableView = [[[NSBundle mainBundle] loadNibNamed:@"HeaderTableView" owner:self options:nil]firstObject];

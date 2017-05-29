@@ -134,17 +134,7 @@
     }
 }
 
--(void)saveEndedMatches{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.endedMatchesArray] forKey:@"endedMatchesArray"];
-    [defaults synchronize];
-}
 
--(void)saveNextMatches{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.nextMatchesArray] forKey:@"nextMatchesArray"];
-    [defaults synchronize];
-}
 
 -(NSDate *)beginningOfDay:(NSDate *)date
 {

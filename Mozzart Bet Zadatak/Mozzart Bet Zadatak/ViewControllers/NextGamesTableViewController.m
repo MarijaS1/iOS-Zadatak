@@ -10,7 +10,6 @@
 
 @interface NextGamesTableViewController ()
 
-@property (strong, nonatomic) NSMutableArray *nextMatchesArray;
 
 @end
 
@@ -20,12 +19,15 @@
     [super viewDidLoad];
     
      self.title = [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_LABEL andSybtype:SUBTYPE_TEXT andSuffix:@"next"];
-    
+  
+}
+
+
+-(void)viewWillAppear:(BOOL)animated {
     [self getNextMatches];
     self.tableArray = self.nextMatchesArray;
     [self.tblTableView reloadData];
 }
-
 
 #pragma mark - Table view data source
 
@@ -50,5 +52,27 @@
     }
     
 }
+
+
+-(void)saveNextMatches{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.nextMatchesArray] forKey:@"nextMatchesArray"];
+    [defaults synchronize];
+}
+
+
+#pragma mark - MatchTableViewCellDelegate methods
+
+//-(void)starButtonTapped:(UIButton *)sender {
+//    [self getAllMatches];
+//    for (Livescores *livescores in self.nextMatchesArray) {
+//        if (livescores.match_id == ((Livescores*)[self.tableArray objectAtIndex:sender.tag]).match_id) {
+//            livescores.isFavourite = !livescores.isFavourite;
+//            [self saveNextMatches];
+//            [self.tblTableView reloadData];
+//        }
+//    }
+//}
+
 
 @end

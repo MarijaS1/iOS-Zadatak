@@ -10,8 +10,6 @@
 
 @interface FinishedMatchesViewController ()
 
-@property (strong, nonatomic) NSMutableArray *endedMatchesArray;
-
 @end
 
 @implementation FinishedMatchesViewController
@@ -22,7 +20,7 @@
     self.title = [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_LABEL andSybtype:SUBTYPE_TEXT andSuffix:@"ended"];
     
     [self getEndedMatches];
-    self.tableArray = self.endedMatchesArray;
+    self.tableArray = self.endMatchesArray;
     [self.tblTableView reloadData];
 }
 
@@ -37,7 +35,7 @@
         NSMutableArray *endedMatchesArray = [NSKeyedUnarchiver unarchiveObjectWithData:endedMatchesData];
         if (endedMatchesArray)
         {
-            self.endedMatchesArray = endedMatchesArray;
+            self.endMatchesArray = endedMatchesArray;
         }
     }
 
