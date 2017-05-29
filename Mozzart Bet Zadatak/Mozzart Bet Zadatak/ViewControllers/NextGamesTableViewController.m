@@ -25,9 +25,17 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [self getNextMatches];
-    self.tableArray = self.nextMatchesArray;
-    [self.tblTableView reloadData];
-}
+    if ([self.nextMatchesArray count]) {
+        self.tableArray = self.nextMatchesArray;
+        [self.tblTableView reloadData];
+        [self.tblTableView setHidden:NO];
+        [self.emptyView setHidden:YES];
+
+    }else{
+        [self.tblTableView setHidden:YES];
+        [self.emptyView setHidden:NO];
+    }
+    }
 
 #pragma mark - Table view data source
 

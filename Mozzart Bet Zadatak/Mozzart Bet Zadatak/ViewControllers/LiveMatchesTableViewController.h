@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LiveMatchesTableViewController : BasicTableViewController <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UIView *emptyView;
 
 
 @end

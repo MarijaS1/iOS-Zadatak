@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface NextGamesTableViewController : BasicTableViewController
+@property (weak, nonatomic) IBOutlet UIView *emptyView;
 
 @end

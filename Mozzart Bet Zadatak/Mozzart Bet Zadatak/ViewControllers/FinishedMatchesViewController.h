@@ -9,6 +9,7 @@
 #import "BasicTableViewController.h"
 
 @interface FinishedMatchesViewController : BasicTableViewController <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UIView *emptyView;
 
 
 @end

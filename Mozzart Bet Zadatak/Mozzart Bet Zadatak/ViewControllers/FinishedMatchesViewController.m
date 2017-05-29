@@ -20,8 +20,16 @@
     self.title = [[LocalizableStringService sharedInstance] getLocalizableStringForType:TYPE_LABEL andSybtype:SUBTYPE_TEXT andSuffix:@"ended"];
     
     [self getEndedMatches];
-    self.tableArray = self.endMatchesArray;
-    [self.tblTableView reloadData];
+    if ([self.endMatchesArray count]) {
+        self.tableArray = self.endMatchesArray;
+        [self.tblTableView reloadData];
+        [self.tblTableView setHidden:NO];
+        [self.emptyView setHidden:YES];
+    }else{
+        [self.tblTableView setHidden:YES];
+        [self.emptyView setHidden:NO];
+    }
+    
 }
 
 
